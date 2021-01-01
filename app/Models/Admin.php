@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Helpers\ImageHelper;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -20,6 +21,7 @@ class Admin extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'image',
         'password',
     ];
 
@@ -45,4 +47,13 @@ class Admin extends Authenticatable
     public function setPasswordAttribute($value){
         return $this->attributes['password'] = Hash::make($value);
     }
+    public function setImageAttribute($value){
+       
+        $this->attributes['image'] = ImageHelper::saveResizedImage($value,'images/admin',640,605);
+        }
+    
+        public function getImageAttribute($value){
+           
+        return $this->attributes['image'] = asset($value);
+        }
 }

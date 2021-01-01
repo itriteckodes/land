@@ -42,6 +42,8 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     Route::get('logout','AdminController@logout')->name('logout');
     Route::resource('agent', 'AgentController');
     Route::resource('service', 'ServiceController');
+    Route::get('profile','AdminController@profile')->name('profile');                                
+    Route::post('update/profile','AdminController@update_profile')->name('update_profile');     
   });
 });
 
@@ -53,7 +55,9 @@ Route::group(['middleware' => ['auth:agent'] ], function () {
   Route::get('dashboard','AgentController@dashboard')->name('dashboard');
   Route::get('logout','AgentController@logout')->name('logout');
   Route::resource('property', 'PropertyController');
-  Route::resource('plot', 'PlotController');                                    
+  Route::resource('plot', 'PlotController');    
+  Route::get('profile','AgentController@profile')->name('profile');                                
+  Route::post('update/profile','AgentController@update_profile')->name('update_profile');                                
 
 });
 });

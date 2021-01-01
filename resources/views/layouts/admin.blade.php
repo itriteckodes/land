@@ -279,7 +279,7 @@
                 aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="" src="">
+                    <img alt="" src="{{Auth::user()->image}}">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{Auth::user()->name}}</span>
@@ -290,7 +290,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="" class="dropdown-item">
+                <a href="{{route('admin.profile')}}" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
