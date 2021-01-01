@@ -38,7 +38,7 @@
               <div class="item">
                 <div class="content-right-md">
                   <figure class="effect-layla">
-                    <img src="images/about-2.jpg" alt="img"/>
+                    <img src="{{asset('front/images/about-2.jpg')}}" alt="img"/>
                     <figcaption> </figcaption>
                   </figure>
                 </div>
@@ -46,7 +46,7 @@
               <div class="item">
                 <div class="content-right-md">
                   <figure class="effect-layla">
-                    <img src="images/about-1.jpg" alt="img"/>
+                    <img src="{{asset('front/images/about-1.jpg')}}" alt="img"/>
                     <figcaption> </figcaption>
                   </figure>
                 </div>
@@ -54,7 +54,7 @@
               <div class="item">
                 <div class="content-right-md">
                   <figure class="effect-layla">
-                    <img src="images/about-2.jpg" alt="img"/>
+                    <img src="{{asset('front/images/about-2.jpg')}}" alt="img"/>
                     <figcaption> </figcaption>
                   </figure>
                 </div>
@@ -75,7 +75,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12 skills margin_bottom">
           <ul>
             <li>
-              <p class="pull-left">Strategy</p>
+              <p class="pull-left">Properties Sold</p>
               <p class="pull-right"> 95%</p>
               <div class="clearfix"></div>
             </li>
@@ -83,16 +83,16 @@
               <div class="progress-bar" data-width="95"> </div>
             </li>
             <li>
-              <p class="pull-left">Design</p>
-              <p class="pull-right"> 78%</p>
+              <p class="pull-left">Plot Sold</p>
+              <p class="pull-right"> 80%</p>
               <div class="clearfix"></div>
             </li>
             <li class="progress bottom30 top10">
               <div class="progress-bar" data-width="78"> </div>
             </li>
             <li>
-              <p class="pull-left">WordPress</p>
-              <p class="pull-right"> 70%</p>
+              <p class="pull-left">Effectice Services</p>
+              <p class="pull-right"> 90%</p>
               <div class="clearfix"></div>
             </li>
             <li class="progress bottom30 top10">
@@ -123,209 +123,7 @@
   </section>
   <!-- #/WHO WE ARE -->
   
-  
-  <!-- PROPERTY SEARCH -->
-  <section id="property-search-sev" class="property-query-area property-page-bg padding parallaxie">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 bottom40">
-          <h2 class="text-uppercase">Advanced <span class="color_red">Search</span></h2>
-          <div class="line_1"></div>
-          <div class="line_2"></div>
-          <div class="line_3"></div>
-        </div>
-      </div>
-      <form class="findus">
-        <div class="row">
-          <div class="col-md-3 col-sm-3">
-            <div class="single-query form-group">
-              <label>Keyword</label>
-              <input type="text" class="keyword-input" placeholder="Any" required>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <div class="single-query form-group">
-                <label>Location</label>
-                <select class="selectpicker" data-live-search="true">
-                  <option selected="" value="any">Any</option>
-                  <option>Location - 1</option>
-                  <option>Location - 2</option>
-                  <option>Location - 3</option>
-                  <option>Location - 4</option>
-                </select>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <div class="single-query form-group">
-                <label>Property Type</label>
-                <select class="selectpicker" data-live-search="true">
-                  <option class="active">Any</option>
-                  <option>Property Type - 1</option>
-                  <option>Property Type - 2</option>
-                  <option>Property Type - 3</option>
-                  <option>Property Type - 4</option>
-                </select>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3">
-            <div class="single-query form-group">
-                <label>Property Status</label>
-                <select class="selectpicker" data-live-search="true">
-                  <option class="active">Any</option>
-                  <option>Property Status - 1</option>
-                  <option>Property Status - 2</option>
-                  <option>Property Status - 3</option>
-                  <option>Property Status - 4</option>
-                </select>
-            </div>
-          </div>
-        </div>
-      </form>
-      <div class="search-2">
-        <form class="findus">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-3 col-sm-3">
-                  <div class="single-query form-group">
-                      <label>Bed Room</label>
-                      <select class="selectpicker" data-live-search="true">
-                        <option class="active">Any</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                      </select>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <div class="single-query form-group">
-                      <label>Bath Room</label>
-                      <select class="selectpicker" data-live-search="true">
-                        <option class="active">Any</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                      </select>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <div class="single-query form-group">
-                    <label>Squre Fit Min</label>
-                    <input type="text" class="keyword-input" placeholder="Any">
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <div class="single-query form-group">
-                    <label>Squre Fit Max</label>
-                    <input type="text" class="keyword-input" placeholder="Any">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-7 col-sm-6">
-                  <div class="single-query-slider top10 bottom10">
-                    <label>Price Range:</label>
-                    <div class="price text-right">
-                      <span>$</span>
-                      <div class="leftLabel"></div>
-                      <span>to $</span>
-                      <div class="rightLabel"></div>
-                    </div>
-                    <div data-range_min="0" data-range_max="500" data-cur_min="0" data-cur_max="2000" class="nstSlider">
-                      <div class="bar"></div>
-                      <div class="leftGrip"></div>
-                      <div class="rightGrip"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-5 col-sm-6 text-right">
-                  <div class="query-submit-button top10">
-                    <input type="submit" class="btn_fill" value="Search">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="group-button-search">
-            <a data-toggle="collapse" href=".html" class="more-filter">
-              <i class="fa fa-plus text-1" aria-hidden="true"></i><i class="fa fa-minus text-2 hide" aria-hidden="true"></i>
-              <div class="text-1">Show more options</div>
-              <div class="text-2 hide">Show less options</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="search-propertie-filters collapse">
-        <div class="container-2">
-          <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Wifi</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Park</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Schools</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Grounds</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Masque</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Hospitals</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Transport</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <div class="search-form-group white">
-                <input type="checkbox" name="check-box" />
-                <span>Security</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- PROPERTY SEARCH --> 
+
   
   
   <!-- Counter Section -->

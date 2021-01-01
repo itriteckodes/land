@@ -4,7 +4,7 @@
 <div class="card mb-4">
     <!-- Card header -->
     <div class="card-header">
-        <h3 class="mb-0">Form group in grid</h3>
+        <h3 class="mb-0">Add Property</h3>
     </div>
     <!-- Card body -->
     <div class="card-body">
@@ -69,7 +69,7 @@
                         <input type="number" name="price" class="form-control" id="example4cols2Input" required>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-control-label" for="exampleFormControlTextarea1">Description</label>
                         <textarea name="description" style="resize: none" class="form-control" id="exampleFormControlTextarea1"

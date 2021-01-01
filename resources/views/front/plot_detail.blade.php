@@ -111,26 +111,28 @@
                 </div>
                 <div class="row top30">
                   <div class="col-xs-12">
-                    <form class="findus">
+                    <form class="findus" action="{{route('save_lead')}}" method="POST">
+                      @csrf
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="single-query">
-                            <input type="text" placeholder="Your Name" class="keyword-input">
+                            <input type="text" name="name" placeholder="Your Name" class="keyword-input">
+                          </div>
+                          <input type="text" name="plot_id" value="{{$plot->id}}" hidden>
+                          <div class="single-query">
+                            <input type="text" name="phone" placeholder="Phone Number" class="keyword-input">
                           </div>
                           <div class="single-query">
-                            <input type="text" placeholder="Phone Number" class="keyword-input">
-                          </div>
-                          <div class="single-query">
-                            <input type="text" placeholder="Email Adress" class="keyword-input">
+                            <input type="email" name="email" placeholder="Email Adress" class="keyword-input">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="single-query">
-                            <textarea placeholder="Massege"></textarea>
+                            <textarea name="message" placeholder="Massege"></textarea>
                           </div>
                         </div>
                         <div class="col-sm-12">
-                          <input type="submit" value="Submit Now" class="btn_fill">
+                          <button type="submit"  class="btn_fill">Submit Now</button>
                         </div>
                       </div>
                     </form>

@@ -24,6 +24,9 @@ Route::view('about','front.about')->name('about');
 Route::view('contact','front.contact')->name('contact');
 Route::post('contact/store','App\Http\Controllers\ContactController@store')->name('contact_store');
 Route::get('agents/properties/{id}','App\Http\Controllers\AgentController@agentProperty')->name('agent_property');
+
+Route::post('add/lead','App\Http\Controllers\ContactController@save_lead')->name('save_lead');
+
 Route::get('plots','App\Http\Controllers\PlotController@index')->name('plots');
 Route::get('plot/detail/{id}','App\Http\Controllers\PlotController@details')->name('plot_detail');
 Route::get('property/detail/{id}','App\Http\Controllers\AgentController@property_details')->name('property_detail');
@@ -43,7 +46,11 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     Route::resource('agent', 'AgentController');
     Route::resource('service', 'ServiceController');
     Route::get('profile','AdminController@profile')->name('profile');                                
-    Route::post('update/profile','AdminController@update_profile')->name('update_profile');     
+    Route::post('update/profile','AdminController@update_profile')->name('update_profile');    
+    
+    Route::get('lead/plots','LeadController@plots')->name('lead_plots');                             
+    Route::get('lead/properties','LeadController@properties')->name('lead_properties');       
+    Route::get('lead/services','LeadController@services')->name('lead_services');       
   });
 });
 
@@ -57,7 +64,9 @@ Route::group(['middleware' => ['auth:agent'] ], function () {
   Route::resource('property', 'PropertyController');
   Route::resource('plot', 'PlotController');    
   Route::get('profile','AgentController@profile')->name('profile');                                
-  Route::post('update/profile','AgentController@update_profile')->name('update_profile');                                
+  Route::post('update/profile','AgentController@update_profile')->name('update_profile');   
+  Route::get('lead/plots','LeadController@plots')->name('lead_plots');                             
+  Route::get('lead/properties','LeadController@properties')->name('lead_properties');                             
 
 });
 });
