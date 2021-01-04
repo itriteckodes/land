@@ -14,10 +14,18 @@
             <div class="item">
               <div class="property_item heading_space">
                 <div class="image">
-                  <a href="#."><img src="{{$property->image}}" alt="listin" class="img-responsive"></a>
-                  <div class="price"><span class="tag">For Sale</span></div>
+                  <a href="#."><img src="{{$property->image1}}" alt="listin" class="img-responsive"></a>
+                  <div class="price"><span class="tag">
+                    @if ($property->type == 'sale')
+                    For Sale
+                    @elseif($property->type == 'invest')
+                        For Investment
+                    @else
+                        For Rent
+                    @endif
+                  </span></div>
                   <div class="property_meta">
-                    <h4>$8,600</h4><p>For Small Family House</p>
+                    <h4> PKR: {{$property->price}}</h4>
                   </div>
                 </div>
               </div>
@@ -25,10 +33,11 @@
             <div class="item">
               <div class="property_item heading_space">
                 <div class="image">
-                  <a href="#."><img src="{{$property->image}}" alt="listin" class="img-responsive"></a>
+                  <a href="#."><img src="{{$property->image2}}" alt="listin" class="img-responsive"></a>
                   <div class="price"><span class="tag">For Sale</span></div>
                   <div class="property_meta">
-                    <h4>$8,600</h4><p>For Small Family House</p>
+                    <h4> PKR: {{$property->price}}</h4>
+
                   </div>
                 </div>
               </div>
@@ -36,10 +45,10 @@
             <div class="item">
               <div class="property_item heading_space">
                 <div class="image">
-                  <a href="#."><img src="{{$property->image}}" alt="listin" class="img-responsive"></a>
+                  <a href="#."><img src="{{$property->image3}}" alt="listin" class="img-responsive"></a>
                   <div class="price"><span class="tag">For Sale</span></div>
                   <div class="property_meta">
-                    <h4>$8,600</h4><p>For Small Family House</p>
+                    <h4> PKR: {{$property->price}}</h4>
                   </div>
                 </div>
               </div>

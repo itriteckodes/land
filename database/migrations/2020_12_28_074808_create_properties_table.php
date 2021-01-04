@@ -22,7 +22,10 @@ class CreatePropertiesTable extends Migration
             $table->integer('bedrooms');
             $table->integer('bathrooms');
             $table->integer('garage');
-            $table->string('image');
+            $table->string('image1');
+            $table->string('image2');
+            $table->string('image3');
+            $table->string('type');
             $table->text('address');
             $table->string('city');
             $table->bigInteger('price');

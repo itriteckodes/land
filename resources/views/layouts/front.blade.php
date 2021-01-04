@@ -143,11 +143,11 @@
                               <a href="{{url('/')}}" >Home</a>
                           </li>
                           
-                          <li class="{{(Request::is('agents'))? 'active':''}}">
+                          <li class="{{(Request::is('agents/*'))? 'active':''}}">
                               <a href="{{route('agents')}}">Agents</a>
                           </li>
 
-                          <li class="{{(Request::is('services'))? 'active':''}}">
+                          <li class="{{(Request::is('services/*'))? 'active':''}}">
                               <a href="{{route('services')}}" >Services</a>
                           </li>
 

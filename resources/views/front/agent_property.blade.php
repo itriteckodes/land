@@ -16,13 +16,20 @@
       <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="property_item heading_space">
           <div class="image">
-            <img src="{{$property->image}}" alt="listin" class="img-responsive">
+            <img src="{{$property->image1}}" alt="listin" class="img-responsive">
             <div class="overlay">
               <div class="centered"><a class="link_arrow white_border"
                   href="{{route('property_detail',$property->id)}}">View Detail</a></div>
             </div>
-            <div class="feature"><span class="tag">Featured</span></div>
-            <div class="price"><span class="tag">For Sale</span></div>
+            <div class="price"><span class="tag">
+              @if ($property->type == 'sale')
+                  For Sale
+              @elseif($property->type == 'invest')
+                  For Investment
+              @else
+                  For Rent
+              @endif
+            </span></div>
             <div class="property_meta">
               <span><i class="fa fa-object-group"></i>{{$property->area}} sq ft </span>
               <span><i class="fa fa-bed"></i>{{$property->bedrooms}}</span>
@@ -33,7 +40,7 @@
             <div class="proerty_text">
               <h3><a href="property_details_1.html">{{$property->address}}</a></h3>
               <span class="bottom10">{{$property->city}}</span>
-              <p><strong>$83,600,200</strong></p>
+              <p><strong>PKR: {{$property->price}} </strong></p>
             </div>
             <div class="favroute clearfix">
               <p class="pull-left"><i class="icon-calendar2"></i> {{$property->created_at->diffForHumans()}}</p>
