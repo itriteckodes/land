@@ -50,7 +50,8 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     
     Route::get('lead/plots','LeadController@plots')->name('lead_plots');                             
     Route::get('lead/properties','LeadController@properties')->name('lead_properties');       
-    Route::get('lead/services','LeadController@services')->name('lead_services');       
+    Route::get('lead/services','LeadController@services')->name('lead_services');  
+    Route::resource('employee', 'EmployeeController');     
   });
 });
 

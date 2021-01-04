@@ -124,6 +124,24 @@
                 </ul>
               </div>
             </li>
+            
+            <li class="nav-item {{(Request::is('admin/employee/*'))? 'active':''}}">
+              <a class="nav-link " href="#navbar-emp" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="navbar-plots">
+                <i class="ni ni-circle-08 text-pink"></i>
+                <span class="nav-link-text">Employee</span>
+              </a>
+              <div class="collapse" id="navbar-emp">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item {{(Request::is('admin/employee/create'))? 'active':''}}">
+                    <a href="{{route('admin.employee.create')}}" class="nav-link">Add</a>
+                  </li>
+                  <li class="nav-item {{(Request::is('admin/lead/properties'))? 'active':''}}">
+                    <a href="{{route('admin.employee.index')}}" class="nav-link">View All</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('contact_index')}}">
                 <i class="ni ni-align-left-2 text-default"></i>

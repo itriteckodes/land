@@ -11,6 +11,7 @@ class LeadController extends Controller
 {
     public function plots(){
         $leads = Lead::where('plot_id','!=',null)->get();
+        // $leads = Lead::wherePlot_id(1)->get();
         return view('agent.lead.plot')->with('leads',$leads);
     }
     public function properties(){
