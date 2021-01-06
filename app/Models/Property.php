@@ -14,17 +14,17 @@ class Property extends Model
 
    public function setImage1Attribute($value){
        
-    $this->attributes['image1'] = ImageHelper::saveResizedImage($value,'images/property',1000,750);
+    $this->attributes['image1'] = ImageHelper::saveResizedImage($value,'images/property',1000,600);
     }  
     
     public function setImage2Attribute($value){
        
-    $this->attributes['image2'] = ImageHelper::saveResizedImage($value,'images/property',1000,750);
+    $this->attributes['image2'] = ImageHelper::saveResizedImage($value,'images/property',1000,600);
     }
     
     public function setImage3Attribute($value){
        
-    $this->attributes['image3'] = ImageHelper::saveResizedImage($value,'images/property',1000,750);
+    $this->attributes['image3'] = ImageHelper::saveResizedImage($value,'images/property',1000,600);
     }
 
     public function getImage1Attribute($value){

@@ -6,11 +6,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>IDEA HOMES </title>
+<title>Eagle City </title>
 <link rel="stylesheet" type="text/css" href="{{asset('front/css/master.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('front/css/color/color-1.css')}}" id="color" />
-<link rel="shortcut icon" href="images/short_icon.png">
+<link rel="shortcut icon" href="{{asset('front/images/short_icon.png')}}">
 <link rel="stylesheet" href="{{asset('toastr/toastr.min.css')}}">
+@yield('style')
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -52,12 +53,8 @@
               <div class="col-md-8 col-sm-8 col-xs-12 text-right">
                   <div class="header-top-links">
                       <ul>
-                          <li><a href="favorite-properties.html"><i class="icon-heart2"></i>Favorites</a></li>
-                          <li class="af-line"></li>
-                          <li><a href="submit-property.html"><i class="icon-icons215"></i>Submit Property</a></li>
-                          <li class="af-line"></li>
-                          <li><a href="my-properties.html"><i class="icon-icons215"></i>My Property</a></li>
-                          <li><a href="{{route('login')}}" class="header-login"><i class="icon-icons179"></i>Login</a></li>
+
+                          <li><a href="{{route('login')}}" ><i class="icon-icons179"></i><strong>Login</strong></a></li>
                       </ul>
                   </div>
               </div>
@@ -71,7 +68,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-2 hidden-xs hidden-sm">
-                  <a href="{{url('/')}}"><img src="{{asset('front/images/logo-white.png')}}" alt="logo" /></a>
+                  <a href="{{url('/')}}"><img src="{{asset('front/images/logo.png')}}" height="80px" width="120px" alt="logo" /></a>
               </div>
               <div class="col-md-10 col-sm-12 col-xs-12">
                   <div class="get-tuch text-left top20">
@@ -81,7 +78,7 @@
                               <h4>Phone Number</h4>
                           </li>
                           <li>
-                              <p>+1 900 234 567 - 68</p>
+                              <p>+92300852963</p>
                           </li>
                       </ul>
                   </div>
@@ -90,10 +87,10 @@
                       <i class="icon-icons74"></i>
                       <ul>
                           <li>
-                              <h4>Victoria Hall,</h4>
+                              <h4>Main Office,</h4>
                           </li>
                           <li>
-                              <p>Idea Homes Melbourne, australia</p>
+                              <p>Eagle City, Sarodha,Punjab,Pakistan</p>
                           </li>
                       </ul>
                   </div>
@@ -105,7 +102,7 @@
                               <h4>Email Address</h4>
                           </li>
                           <li>
-                              <p><a href="#">info@ideahomes.com</a></p>
+                              <p><a href="#">info@eaglecity.com</a></p>
                           </li>
                       </ul>
                   </div>
@@ -132,7 +129,7 @@
                   <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                           <i class="fa fa-bars"></i></button>
-                      <a class="navbar-brand sticky_logo" href="index.html"><img src="{{asset('front/images/logo-white.png')}}"
+                      <a class="navbar-brand sticky_logo" href="index.html"><img src="{{asset('front/images/logo.png')}}" height="80px" width="100px"
                               class="logo" alt=""></a>
                   </div>
                   <!-- End Header Navigation -->
@@ -143,11 +140,11 @@
                               <a href="{{url('/')}}" >Home</a>
                           </li>
                           
-                          <li class="{{(Request::is('agents/*'))? 'active':''}}">
+                          <li class="{{(Request::is('agents*'))? 'active':''}}">
                               <a href="{{route('agents')}}">Agents</a>
                           </li>
 
-                          <li class="{{(Request::is('services/*'))? 'active':''}}">
+                          <li class="{{(Request::is('services*'))? 'active':''}}">
                               <a href="{{route('services')}}" >Services</a>
                           </li>
 
@@ -159,8 +156,8 @@
                               <a href="{{route('properties')}}">Buildings</a>
                           </li>
 
-                          <li class="">
-                              <a href="#.">Maps</a>
+                          <li class="{{(Request::is('maps'))? 'active':''}}">
+                              <a href="{{route('maps')}}">Maps</a>
                           </li>
 
                           <li class="{{(Request::is('about'))? 'active':''}}">
@@ -199,8 +196,8 @@
           </p>
           <ul class="list-inline mt-5">
             <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">123-456-789</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">contact@yourdomain.com</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">www.yourdomain.com</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">contact@eaglecity.com</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">www.eaglecity.com</a> </li>
           </ul>
         </div>
       </div>
@@ -230,7 +227,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-5">
-          <p class="font-11 text-black-777 m-0 copy-right">Copyright: 2021 <a href="#."><span class="color_red">IDEA HOMES</span></a>. All Rights Reserved</p>
+          <p class="font-11 text-black-777 m-0 copy-right">Copyright: 2021 <a href="#."><span class="color_red">Eagle City</span></a>. All Rights Reserved</p>
         </div>
         <div class="col-md-6 col-sm-7 text-right">
           <div class="widget no-border m-0">
@@ -251,141 +248,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title" id="myModalLabel">How can <span class="color_red">we help?</span></h2>
-      </div>
 
-      <div class="modal-body">
-
-        <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-        <div class="short-msg-tab"> 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Suggestion</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Question</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Problems</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-comments-o" aria-hidden="true"></i> Feedback</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">
-              <div class="row">
-                <div class="col-md-12"><h3>Suggestion</h3></div>
-                <form class="callus padding-bottom" id="contact-form">
-                
-                  <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text">
-                        </div>
-                  </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email">
-                        </div>
-                   </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <textarea name="message" placeholder="Message" id="message"></textarea>
-                        </div>
-                   </div>
-                </form>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="profile">
-              <div class="row">
-                <div class="col-md-12"><h3>Question</h3></div>
-                <form class="callus padding-bottom" id="contact-form">
-                
-                  <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text">
-                        </div>
-                  </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email">
-                        </div>
-                   </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <textarea name="message" placeholder="Message" id="message"></textarea>
-                        </div>
-                   </div>
-                </form>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="messages">
-              <div class="row">
-                <div class="col-md-12"><h3>Problems</h3></div>
-                <form class="callus padding-bottom" id="contact-form">
-                
-                  <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text">
-                        </div>
-                  </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email">
-                        </div>
-                   </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <textarea name="message" placeholder="Message" id="message"></textarea>
-                        </div>
-                   </div>
-                </form>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="settings">
-              <div class="row">
-                <div class="col-md-12"><h3>Feedback</h3></div>
-                <form class="callus padding-bottom" id="contact-form">
-                
-                  <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text">
-                        </div>
-                  </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email">
-                        </div>
-                   </div>
-
-                   <div class="col-md-12">
-                        <div class="single-query">
-                            <textarea name="message" placeholder="Message" id="message"></textarea>
-                        </div>
-                   </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="dark_border" data-dismiss="modal">Cancel Message</button>
-        <button type="button" class="btn_fill">Send Message</button>
-      </div>
-
-    </div>
-  </div>
-</div>
 <!-- #/Modal -->
 
 
@@ -461,6 +324,7 @@
 <script src="{{asset('front/js/gmaps.js')}}"></script>
 <script src="{{asset('front/js/contact.js')}}"></script> 
 <script src="{{asset('toastr/toastr.min.js')}}"></script>
+@yield('script')
 @toastr_render
 <!--===== #/REQUIRED JS =====-->
 

@@ -6,6 +6,7 @@
         <div class="col-md-12">
           <h2 class="text-uppercase">{{$property->title}}</h2>
           <p class="">{{$property->address}}</p>
+          <br>
         </div>
       </div>
       <div class="row">
@@ -70,7 +71,7 @@
               <div role="tabpanel" class="tab-pane active" id="description">
                 <h3 class="text-uppercase  bottom20 top10">Property <span class="color_red">Description</span></h3>
                 <p class="p-font-15">{{$property->description}}</p>
-                
+                <br>
                 <div class="property_meta bottom40">
                   <span><i class="fa fa-object-group"></i>{{$property->area}} sq ft </span>
                   <span><i class="fa fa-bed"></i>{{$property->bedrooms}} Bedrooms</span>

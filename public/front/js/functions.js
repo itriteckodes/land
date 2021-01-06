@@ -575,8 +575,8 @@ jQuery(function($) {
     /* Typewriter
     ============================================== */
     $('#typewriter').typewriter({
-        prefix: "Idea homes provides ",
-        text: ["best clients", "best stellar service", "simple question", "home valutation"],
+        prefix: "Eagle City Provides ",
+        text: ["Property Agents", "Best Seller Service", "Plots Maps", "Home Valutation"],
         typeDelay: 90,
         waitingTime: 1500,
         blinkSpeed: 200
@@ -640,67 +640,7 @@ $(function() {
 
 /* Color Pickers
 ============================================== */
-(function() {
-    $('<div class="color-picker"><a href="#" class="handle"><i class="fa fa-cog fa-spin"></i></a><div class="settings-header"><h3>Setting panel</h3></div><div class="section"><h4 class="color">Normal color schemes:</h4><div class="colors"><a href="#" class="color-1" ></a><a href="#" class="color-2" ></a><a href="#" class="color-3" ></a><a href="#" class="color-4" ></a><a href="#" class="color-5" ></a><a href="#" class="color-6" ></a><a href="#" class="color-7" ></a><a href="#" class="color-8" ></a><a href="#" class="color-9" ></a><a href="#" class="color-10" ></a></div></div></div>').appendTo($('body'));
-})();
-$(".color-1").click(function() {
-    $("#color").attr("href", "{{asset('front/css/color/color-1.css')}}");
-    return false;
-});
-$(".color-2").click(function() {
-    $("#color").attr("href", "{{asset('front/css/color/color-2.css')}}");
-    return false;
-});
-$(".color-3").click(function() {
-    $("#color").attr("href", "css/color/color-3.css");
-    return false;
-});
-$(".color-4").click(function() {
-    $("#color").attr("href", "css/color/color-4.css");
-    return false;
-});
-$(".color-5").click(function() {
-    $("#color").attr("href", "css/color/color-5.css");
-    return false;
-});
-$(".color-6").click(function() {
-    $("#color").attr("href", "css/color/color-6.css");
-    return false;
-});
-$(".color-7").click(function() {
-    $("#color").attr("href", "css/color/color-7.css");
-    return false;
-});
-$(".color-8").click(function() {
-    $("#color").attr("href", "css/color/color-8.css");
-    return false;
-});
-$(".color-9").click(function() {
-    $("#color").attr("href", "css/color/color-9.css");
-    return false;
-});
-$(".color-10").click(function() {
-    $("#color").attr("href", "css/color/color-10.css");
-    return false;
-});
 
-$('.color-picker').animate({
-    left: '-239px'
-});
-
-$('.color-picker a.handle').click(function(e) {
-    e.preventDefault();
-    var div = $('.color-picker');
-    if (div.css('left') === '-239px') {
-        $('.color-picker').animate({
-            left: '0px'
-        });
-    } else {
-        $('.color-picker').animate({
-            left: '-239px'
-        });
-    }
-});
 
 /* Loan Calculator
 ============================================== */

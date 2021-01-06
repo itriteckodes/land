@@ -54,8 +54,22 @@ class Agent extends Authenticatable
         $this->attributes['image'] = ImageHelper::saveResizedImage($value,'images/agents',640,605);
         }
     
-        public function getImageAttribute($value){
-           
-        return $this->attributes['image'] = asset($value);
-        }
+    public function getImageAttribute($value){
+        
+    return $this->attributes['image'] = asset($value);
+    }
+
+    public function leadsCount(){
+        $count = 0;
+        $leads = Lead::all();
+            foreach($leads as $lead){
+                if( $lead->plot->agent->id == $this->id){
+                    $count++;
+                }
+                elseif( $lead->property->agent->id == $this->id){
+                    $count ++;
+                }
+            }
+      return $count;
+    }
 }

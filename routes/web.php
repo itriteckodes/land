@@ -22,6 +22,8 @@ Route::get('agents','App\Http\Controllers\AgentController@index')->name('agents'
 Route::get('services','App\Http\Controllers\ServiceController@services')->name('services');
 Route::view('about','front.about')->name('about');
 Route::view('contact','front.contact')->name('contact');
+Route::get('maps','App\Http\Controllers\MapController@maps')->name('maps');
+
 Route::post('contact/store','App\Http\Controllers\ContactController@store')->name('contact_store');
 Route::get('agents/properties/{id}','App\Http\Controllers\AgentController@agentProperty')->name('agent_property');
 
@@ -35,6 +37,7 @@ Route::get('service/detail/{id}','App\Http\Controllers\ServiceController@service
 Route::get('contact/index','App\Http\Controllers\ContactController@index')->name('contact_index')->middleware('auth:admin');
 Route::view('login','login')->name('login');
 Route::post('login','App\Http\Controllers\AuthController@login')->name('login');
+
 
 
  Route::group(['prefix'=> 'admin','namespace' => 'App\Http\Controllers\Admin', 'as' => 'admin.'], function () {

@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>Eagle City || Admin</title>
   <!-- Favicon -->
   <link rel="icon" href="{{asset('assets/img/brand/favicon.pn')}}g" type="image/png">
   <!-- Fonts -->
@@ -50,7 +50,7 @@
       <!-- Brand -->
       <div class="sidenav-header  align-items-center">
         <a class="navbar-brand" href="javascript:void(0)">
-          <img src="{{asset('assets/img/brand/blue.png')}}" class="navbar-brand-img" alt="...">
+          <img src="{{asset('front/images/logo.png')}}" height="400px" width="100px" class="navbar-brand-img" alt="...">
         </a>
       </div>
       <div class="navbar-inner">

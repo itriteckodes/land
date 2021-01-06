@@ -41,7 +41,7 @@
     <div class="container">
       <a class="navbar-brand" href="dashboard.html">
         {{-- <img src="../assets/img/brand/white.png"> --}}
-        <h1 class="text-white">Property</h1>
+        <h1 class="text-white">Eagle City</h1>
       </a>
     </div>
   </nav>
@@ -93,7 +93,6 @@
                 <div class="custom-control custom-control-alternative custom-checkbox">
                   <input class="custom-control-input" id=" customCheckLogin" type="checkbox" name="remember">
                   <label class="custom-control-label" for=" customCheckLogin">
-                    <span class="text-muted">Remember me</span>
                   </label>
                 </div>
                 <div class="text-center">

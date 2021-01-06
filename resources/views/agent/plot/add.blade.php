@@ -31,19 +31,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class=" col-md-3">
+                <div class=" col-md-4">
                     <div class="form-group">
                         <label class="form-control-label" for="example4cols3Input">address</label>
                         <input type="text" name="address" class="form-control" id="example4cols3Input" required>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label class="form-control-label" for="example4cols2Input">City</label>
                         <input type="text" name="city" class="form-control" id="example4cols2Input" required>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label class="form-control-label" for="example4cols2Input">Price</label>
                         <input type="text" name="price" class="form-control" id="example4cols2Input" required>

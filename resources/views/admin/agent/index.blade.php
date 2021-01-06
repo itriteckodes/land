@@ -16,19 +16,18 @@
               <tr>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Image</th>
+                <th>Phone</th>
               </tr>
             </thead>
-            <tfoot>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-              </tr>
-            </tfoot>
             <tbody>
                 @foreach ($agents as $agent)
               <tr>
                   <td>{{$agent->name}}</td>
                   <td>{{$agent->email}}</td>
+                  <td><img src="{{$agent->image}}" height="50px" width="50px" alt=""></td>
+                  <td>{{$agent->phone}}</td>
+
               </tr>
               @endforeach
             </tbody>
