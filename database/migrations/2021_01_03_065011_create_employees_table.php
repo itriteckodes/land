@@ -17,11 +17,14 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string('job_title');
             $table->string('rank');
-            $table->string('name');
+            $table->string('fname');
+            $table->string('lname');
             $table->string('image');
             $table->bigInteger('salary');
+            $table->bigInteger('cnic');
             $table->bigInteger('phone');
             $table->string('address');
+            $table->string('category');
             $table->timestamps();
         });
     }

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
    protected $fillable = [ 
-       'job_title','name' ,'rank','image','salary','phone','address'
+       'job_title','fname','lname' ,'rank','image','salary','phone','address','cnic','category'
    ];
 
    public function setImageAttribute($value){

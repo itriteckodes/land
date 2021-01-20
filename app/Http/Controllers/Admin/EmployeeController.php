@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Employee;
+use App\Models\Payment;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -89,5 +90,21 @@ class EmployeeController extends Controller
         $employee->delete();
         toastr()->success('successfully deleted');
         return redirect()->back();
+    }
+
+    public function pay_employee(Request $request){
+        Payment::create($request->all());
+        toastr()->info('you just paid salary to employee');
+        return redirect()->back();
+    }
+
+    public function payment_index(){
+        $payments  = Payment::all();
+        return view('admin.employee.payment')->with('payments',$payments);
+    }
+
+    public function print($id){
+        $payment = Payment::find($id);
+        return view('admin.employee.print')->with('payment',$payment);
     }
 }

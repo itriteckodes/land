@@ -21,11 +21,12 @@ class CreatePlotsTable extends Migration
             $table->bigInteger('area');
             $table->string('image');
             $table->text('address');
-            $table->string('city');
+            $table->string('block');
             $table->string('lat');
             $table->string('long');
             $table->bigInteger('price');
             $table->text('description');
+            $table->string('marla');
             $table->timestamps();
         });
     }

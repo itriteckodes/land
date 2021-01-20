@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('front/css/color/color-1.css')}}" id="color" />
 <link rel="shortcut icon" href="{{asset('front/images/short_icon.png')}}">
 <link rel="stylesheet" href="{{asset('toastr/toastr.min.css')}}">
+
 @yield('style')
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -53,8 +54,12 @@
               <div class="col-md-8 col-sm-8 col-xs-12 text-right">
                   <div class="header-top-links">
                       <ul>
-
-                          <li><a href="{{route('login')}}" ><i class="icon-icons179"></i><strong>Login</strong></a></li>
+                        <li><a href="{{route('agent.dashboard')}}"><i class="icon-icons215"></i>Agent</a></li>
+                        <li class="af-line"></li>
+                        
+                        <li><a href="{{route('user.dashboard')}}"><i class="icon-icons215"></i>Dashboard</a></li>
+                        <li class="af-line"></li>
+                          <li><a href="{{route('user.login')}}" ><i class="icon-icons179"></i><strong>Login/Register</strong></a></li>
                       </ul>
                   </div>
               </div>

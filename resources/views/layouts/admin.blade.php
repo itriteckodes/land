@@ -148,6 +148,20 @@
                 <span class="nav-link-text">Queries by customer</span>
               </a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.payment_index')}}">
+                <i class="ni ni-align-left-2 text-default"></i>
+                <span class="nav-link-text">Payments</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.complaint')}}">
+                <i class="ni ni-ui-04 text-default"></i>
+                <span class="nav-link-text">Complaints</span>
+              </a>
+            </li>
 
             
             <li class="nav-item">
@@ -299,7 +313,7 @@
 
   @toastr_render
 
-  @yield('script')
+  @yield('script')                                                      
 </body>
 
 </html>

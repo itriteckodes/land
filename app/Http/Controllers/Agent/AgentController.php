@@ -26,7 +26,7 @@ class AgentController extends Controller
 
     public function logout(){
         Auth::guard('agent')->logout();
-        return redirect()->route('login');
+        return redirect()->route('agent.login');
         
     }
 }

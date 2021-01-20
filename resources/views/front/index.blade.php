@@ -74,59 +74,52 @@
 
 
 <!-- WHO WE ARE -->
-<section id="we_are">
+<section id="about-sev" class="padding">
   <div class="container">
+    
     <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-12 skills margin_bottom">
-        <ul>
-          <li>
-            <p class="pull-left">Properties Sold</p>
-            <p class="pull-right"> 95%</p>
-            <div class="clearfix"></div>
-          </li>
-          <li class="progress bottom30 top10">
-            <div class="progress-bar" data-width="95"> </div>
-          </li>
-          <li>
-            <p class="pull-left">Plot Sold</p>
-            <p class="pull-right"> 80%</p>
-            <div class="clearfix"></div>
-          </li>
-          <li class="progress bottom30 top10">
-            <div class="progress-bar" data-width="78"> </div>
-          </li>
-          <li>
-            <p class="pull-left">Effectice Services</p>
-            <p class="pull-right"> 90%</p>
-            <div class="clearfix"></div>
-          </li>
-          <li class="progress bottom30 top10">
-            <div class="progress-bar" data-width="70"> </div>
-          </li>
-          <li>
-            <p class="pull-left">Marketing</p>
-            <p class="pull-right"> 85%</p>
-            <div class="clearfix"></div>
-          
-          </li>
-          <li class="progress top10">
-            <div class="progress-bar" data-width="85"> </div>
-          </li>
-        </ul>
+
+      <div class="col-md-7 col-sm-7 col-xs-12">
+
+        <div class="row">
+          <div class="col-md-12 bottom40">
+            <h2 class="text-uppercase">About Eagle City</h2>
+            <div class="line_1"></div>
+            <div class="line_2"></div>
+            <div class="line_3"></div>
+          </div>
+        </div>
+
+        <div class="about-sev-tag">
+
+          <h4>A little about us and a breif history of how we started.</h4>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan when an unknown printer took a galley of type and scramble. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+          <ul>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> Pleasure and praising in finding property</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> The great explorer of the truth</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> Anyone who loves or pursues or desires</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> The printing and typesetting industry.</li>
+          </ul>
+
+          <div class="founder-text">
+              <p>Who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur.</p>
+              <h3>- Ali Farhan, Founder.</h3>
+          </div> 
+
+        </div>
+
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <h2 class="text-uppercase">who we <span class="color_red">are</span></h2>
-        <div class="line_1"></div>
-        <div class="line_2"></div>
-        <div class="line_3"></div>
-        <p class="top40 bottom30">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-        </p>
-        <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores. Sed ut perspiciatis unde omnis iste
-          natus error sit voluptatem</p>
+
+      <div class="col-md-5 col-sm-5 col-xs-12">
+        <div class="about-sev-img">
+         <img src="{{asset('front/images/about.png')}}" alt="image">
+        </div>
       </div>
+
     </div>
+
   </div>
 </section>
 <!-- #/WHO WE ARE -->
@@ -723,7 +716,7 @@
 
 
 <!-- PROPERTY LISTING -->
-<section id="property" class="bg_light padding">
+{{-- <section id="property" class="bg_light padding">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 bottom40">
@@ -780,6 +773,187 @@
 
     </div>
 
+  </div>
+</section> --}}
+
+<section id="property" class="bg_light padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 bottom40">
+        <h2 class="uppercase">PROPERTY <span class="color_red">LISTINGS</span></h2>
+        <div class="line_1"></div>
+        <div class="line_2"></div>
+        <div class="line_3"></div>
+        <p>We have Properties in these Areas View a list of Featured Properties.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-5.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Rent</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">South Mervin Boulevard</a></h3>
+              <span>45 Regent Street, London, UK</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$8,600 </p>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-2.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Rent</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">The Helux villa</a></h3>
+              <span>45 Regent Street, London, UK</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$5,600,000</p>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-3.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Sale</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">House in New York City</a></h3>
+              <span>Merrick Way, Miami, USA</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$8,600 </p>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-4.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Sale</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">House in New York City</a></h3>
+              <span>Merrick Way, Miami, USA</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$32,650,000</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-5.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Rent</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">Triple Story</a></h3>
+              <span>Merrick Way, Miami, USA</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$8, 600 </p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="property_item bottom40">
+          <div class="image">
+            <img src="{{asset('front/images/property-listing-6.jpg')}}" alt="listin" class="img-responsive">
+            <div class="property_meta">
+            <span><i class="fa fa-object-group"></i>530 sq ft </span>
+            <span><i class="fa fa-bed"></i>2</span>
+            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
+            <div class="price"><span class="tag">For Rent</span></div>
+            <div class="overlay">
+            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+            </div>
+          </div>
+          <div class="proerty_content">
+            <div class="proerty_text">
+              <h3><a href="property_details_1.html">House in New York City</a></h3>
+              <span>new satellite town sargodha</span>
+              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+            </div>
+            <div class="favroute clearfix">
+              <p class="pull-md-left">$1,350,000</p>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="pager">
+          <li><a href="#.">1</a></li>
+          <li class="active"><a href="#.">2</a></li>
+          <li><a href="#.">3</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 <!-- PROPERTY LISTING -->

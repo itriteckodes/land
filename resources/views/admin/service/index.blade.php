@@ -15,7 +15,6 @@
           <thead class="thead-light">
             <tr>
               <th>Title</th>
-              <th>City</th>
               <th>Price</th>
               <th>Image</th>
               <th>Description</th>
@@ -27,12 +26,11 @@
             @foreach ($services as $service)
             <tr>
               <td>{{$service->title}}</td>
-              <td>{{$service->city}}</td>
               <td>{{$service->price}}</td>
               <td> <img src="{{$service->image}}" height="50px" width="80px" alt=""></td>
               <td>{{$service->description}}</td>
               <td><button id="{{$service->id}}" disc="{{$service->description}}" title="{{$service->title}}"
-                  price="{{$service->price}}" city="{{$service->city}}" disc="{{$service->description}}"
+                  price="{{$service->price}}"  disc="{{$service->description}}"
                   data-toggle="modal" data-target="#edit_plot" class="btn btn-primary editit">Edit</button></td>
               <td>
                 <button data-toggle="modal" data-target="#delete_plot" id="{{$service->id}}"
@@ -62,13 +60,9 @@
           @method('put')
           @csrf
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label for="">Title</label>
               <input id="title" type="text" name="title" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label for="">City</label>
-              <input id="city" type="text" name="city" class="form-control">
             </div>
           </div>
           <div class="row">
@@ -140,15 +134,14 @@
     
       let id=this.id;
         let title = $(this).attr('title');
-        let city = $(this).attr('city');
+        let block = $(this).attr('block');
         let price = $(this).attr('price');
         let description = $(this).attr('disc');
 
         $('#id').val(id);
         $('#title').val(title);
-        $('#city').val(city);
+        $('#block').val(block);
         $('#price').val(price);
-        $('#city').val(city);
         $('#description').val(description);
      
          $('#edit').attr('action','{{route('admin.service.update','')}}'+'/'+id);

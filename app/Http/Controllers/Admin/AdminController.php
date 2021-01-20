@@ -27,7 +27,7 @@ public function update_profile(Request $request){
    
    public function logout(){
     Auth::guard('admin')->logout();
-    return redirect()->route('login');
+    return redirect()->route('agent.login');
 
     
 }

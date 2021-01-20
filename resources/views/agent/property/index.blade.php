@@ -16,13 +16,16 @@
             <tr>
               <th>Name</th>
               <th>Area</th>
+              <th>Marla</th>
               <th>Bedrooms</th>
               <th>Bathroms</th>
               <th>Garage</th>
               <th>Image</th>
               <th>Address</th>
-              <th>City</th>
+              <th>Block</th>
               <th>Discription</th>
+              <th>Action</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -30,16 +33,17 @@
             <tr>
               <td>{{$property->title}}</td>
               <td>{{$property->area}}</td>
+              <td>{{$property->marla}}</td>
               <td>{{$property->bedrooms}}</td>
               <td>{{$property->bathrooms}}</td>
               <td>{{$property->garage}}</td>
-              <td> <img src="{{$property->image}}" height="50px" width="80px" alt=""></td>
+              <td> <img src="{{$property->image1}}" height="50px" width="80px" alt=""></td>
               <td>{{$property->address}}</td>
-              <td>{{$property->city}}</td>
+              <td>{{$property->block}}</td>
               <td>{{$property->description}}</td>
               <td><button id="{{$property->id}}" bedrooms="{{$property->bedrooms}}" bathrooms="{{$property->bathrooms}}"
                   title="{{$property->title}}" area="{{$property->area}}" garage="{{$property->garage}}"
-                  address="{{$property->address}}" city="{{$property->city}}" disc="{{$property->description}}"
+                  address="{{$property->address}}" block="{{$property->block}}" disc="{{$property->description}}"
                   data-toggle="modal" data-target="#edit_plot" class="btn btn-primary editit">Edit</button></td>
               <td>
                 <button data-toggle="modal" data-target="#delete_plot" id="{{$property->id}}"
@@ -110,17 +114,34 @@
             </div>
 
             <div class="col-md-6">
-              <label for="">City</label>
-              <input id="city" type="text" name="city" class="form-control">
+              <label for="">Block</label>
+              <input id="block" type="text" name="block" class="form-control">
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <label for="">Description</label>
               <textarea id="description" name="description" class="form-control" name="" id="" cols="30" rows="4"
                 style="resize: none"></textarea>
             </div>
+            
+            <div class="col-md-6 ">
+              <div class="form-group">
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="5" name="marla">
+                      <label class="form-check-label">5 Marla</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="7" name="marla">
+                      <label class="form-check-label">7 Marla</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="10" name="marla">
+                      <label class="form-check-label">10 Marla</label>
+                  </div>
+              </div>
+          </div>
           </div>
       </div>
       <div class="modal-footer">
@@ -172,7 +193,7 @@
         let garage = $(this).attr('garage');
         let area = $(this).attr('area');
         let address = $(this).attr('address');
-        let city = $(this).attr('city');
+        let block = $(this).attr('block');
         let description = $(this).attr('disc');
 
         $('#id').val(id);
@@ -182,7 +203,7 @@
         $('#garage').val(garage);
         $('#area').val(area);
         $('#address').val(address);
-        $('#city').val(city);
+        $('#block').val(block);
         $('#description').val(description);
      
          $('#edit').attr('action','{{route('agent.property.update','')}}'+'/'+id);

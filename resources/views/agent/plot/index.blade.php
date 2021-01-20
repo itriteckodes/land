@@ -16,9 +16,10 @@
             <tr>
               <th>Name</th>
               <th>Area</th>
+              <th>Marla</th>
               <th>Image</th>
               <th>Address</th>
-              <th>City</th>
+              <th>Block</th>
               <th>Discription</th>
               <th>Action</th>
               <th>Action</th>
@@ -29,12 +30,13 @@
             <tr>
               <td>{{$plot->title}}</td>
               <td>{{$plot->area}}</td>
+              <td>{{$plot->marla}}</td>
               <td> <img src="{{$plot->image}}" height="50px" width="80px" alt=""></td>
               <td>{{$plot->address}}</td>
-              <td>{{$plot->city}}</td>
+              <td>{{$plot->block}}</td>
               <td>{{$plot->description}}</td>
               <td><a href="" id="{{$plot->id}}" plot="{{$plot}}" title="{{$plot->title}}" area="{{$plot->area}}"
-                  address="{{$plot->address}}" city="{{$plot->city}}" disc="{{$plot->description}}" data-toggle="modal"
+                  address="{{$plot->address}}" block="{{$plot->block}}" disc="{{$plot->description}}" data-toggle="modal"
                   data-target="#edit_plot" class="btn btn-primary edit-btn">Edit</a></td>
                 <td>
                   <button data-toggle="modal" data-target="#delete_plot" id="{{$plot->id}}" class="btn btn-danger delete-btn">Delete</button>
@@ -81,17 +83,33 @@
             </div>
 
             <div class="col-md-6">
-              <label for="">City</label>
-              <input id="city" type="text" name="city" class="form-control">
+              <label for="">Block</label>
+              <input id="block" type="text" name="block" class="form-control">
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <label for="">Description</label>
               <textarea id="description" name="description" class="form-control" name="" id="" cols="30" rows="4"
                 style="resize: none"></textarea>
             </div>
+            <div class="col-md-6 ">
+              <div class="form-group">
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="5" name="marla">
+                      <label class="form-check-label">5 Marla</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="7" name="marla">
+                      <label class="form-check-label">7 Marla</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" value="10" name="marla">
+                      <label class="form-check-label">10 Marla</label>
+                  </div>
+              </div>
+          </div>
           </div>
       </div>
       <div class="modal-footer">
@@ -145,14 +163,14 @@
         let plot = $(this).attr('plot');
         let area = $(this).attr('area');
         let address = $(this).attr('address');
-        let city = $(this).attr('city');
+        let block = $(this).attr('block');
         let description = $(this).attr('disc');
 
         $('#id').val(id);
         $('#title').val(title);
         $('#area').val(area);
         $('#address').val(address);
-        $('#city').val(city);
+        $('#block').val(block);
         $('#description').val(description);
      
          $('#edit').attr('action','{{route('agent.plot.update','')}}'+'/'+id);

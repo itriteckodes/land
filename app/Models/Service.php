@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Service extends Model
 {
     protected $fillable =[
-        'title','image','city','description','price'
+        'title','image','description','price'
     ];  
 
     public function setImageAttribute($value){

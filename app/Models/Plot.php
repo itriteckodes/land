@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Plot extends Model
 {
     protected $fillable = [
-        'title','agent_id','area','image','description','address','city','lat','long','price'
+        'title','agent_id','area','image','description','address','block','lat','long','price','marla'
        ];
 
        public function setImageAttribute($value){
