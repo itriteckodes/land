@@ -19,5 +19,11 @@ class AgentSeeder extends Seeder
            'email' => 'agent@mail.com',
            'password' => 1234
        ]);
+       
+       Agent::create([
+           'name' => 'huzaifa',
+           'email' => 'ihuzaifaaslam@gmail.com',
+           'password' => 1234
+       ]);
     }
 }

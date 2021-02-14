@@ -21,6 +21,7 @@ class CreateAgentsTable extends Migration
             $table->string('password');
             $table->string('image')->default('images/default.png');
             $table->bigInteger('phone')->default('03123456789');
+            $table->string('code')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

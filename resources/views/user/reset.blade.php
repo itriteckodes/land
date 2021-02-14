@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Admin Login</title>
+  <title>Forget Password</title>
 
    <link rel="icon" href="{{asset('assets/img/brand/favicon.pn')}}g" type="image/png">
     <!-- Fonts -->
@@ -55,7 +55,7 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-              <h1 class="text-white">Welcome!</h1>
+              <h1 class="text-white">Enter Verfication code you received</h1>
             </div>
           </div>
         </div>
@@ -74,29 +74,29 @@
            
             <div class="card-body px-lg-5 py-lg-5">
              
-              <form role="form" method="POST" action="{{route('login')}}">
+              <form role="form" method="POST" action="{{route('user.reset.password')}}">
                 @csrf
                 <div class="form-group mb-3">
                   <div class="input-group input-group-merge input-group-alternative">
                     <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Email" type="email" name="email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-merge input-group-alternative">
-                    <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Password" type="password" name="password">
+                    <input class="form-control" placeholder="Enter code you received" type="password" name="code" required>
+                    <input type="hidden" name="email" value="{{$email}}">
                   </div>
                 </div>
-                <div class="custom-control ">
-                  <a href="{{url('forget/password')}}">forget Password?</a>
+                
+                <div class="form-group mb-3">
+                    <div class="input-group input-group-merge input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Enter New Password" type="password" name="password" required>
+    
+                      </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary my-4">Sign in</button>
+                  <button type="submit" class="btn btn-primary my-4">Reset Password</button>
                 </div>
               </form>
             </div>

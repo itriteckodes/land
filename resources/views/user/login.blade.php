@@ -60,6 +60,8 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        
+                                        <a href="{{url('forget/user/password')}}">Forget password?</a>
                                     </div>
                                 </div>
                             </div>

@@ -40,13 +40,21 @@ Route::get('/', function () {
 Route::post('user/register','App\Http\Controllers\User\UserController@store')->name('user.register');
 Route::post('user/login','App\Http\Controllers\User\AuthController@login')->name('user.login');
 
+Route::view('forget/user/password','user.forget');                             
+
 Route::group(['prefix'=> 'user','namespace' => 'App\Http\Controllers\User', 'as' => 'user.'], function () {
+
+  Route::post('send/verfication','UserController@verification')->name('verify');
+  Route::post('reset/password','UserController@resetPassword')->name('reset.password');
 
   Route::group(['middleware' => ['auth'] ], function () {
     Route::get('dashboard','UserController@dashboard')->name('dashboard');
     Route::resource('complaint', 'ComplaintController');
     Route::post('update_profile', 'UserController@update_profile')->name('update_profile');
     Route::get('update/profile', 'UserController@profile')->name('profile');
+    Route::get('services/list', 'ServiceController@index')->name('all_serices');
+    Route::get('avail/service/{id}', 'ServiceController@avail')->name('avail_service');
+    Route::get('user/services', 'ServiceController@userService')->name('user_service');
     Route::get('logout', 'AuthController@logout')->name('logout');
   });
 });
@@ -69,12 +77,18 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     Route::get('payments','EmployeeController@payment_index')->name('payment_index');   
     Route::get('user/complaints','ComplaintController@index')->name('complaint');   
     Route::get('print/{id}','EmployeeController@print')->name('print');   
+    Route::get('fulfil/complaint/{id}','ComplaintController@approve')->name('fullfill_complaint');
+    Route::get('availed/services/user','ServiceController@fetch')->name('availed_services');
   });
 });
 
 
+
+Route::view('forget/password','agent.forget');                             
+
 Route::group(['prefix'=> 'agent','namespace' => 'App\Http\Controllers\Agent', 'as' => 'agent.'], function () {
-  
+  Route::post('send/verfication','AgentController@verification')->name('verify');
+  Route::post('reset/password','AgentController@resetPassword')->name('reset.password');
 Route::group(['middleware' => ['auth:agent'] ], function () {
   
     Route::get('dashboard','AgentController@dashboard')->name('dashboard');

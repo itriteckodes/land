@@ -12,4 +12,13 @@ class ComplaintController extends Controller
        $complaints = Complaint::all();
        return view('admin.complaints.index')->with('complaints',$complaints);
    }
+
+   public function approve($id){
+        $com = Complaint::find($id);
+        $com->update([
+            'status' => true
+        ]);
+        toastr()->info('complaint was fulfilled');
+        return redirect()->back();
+   }
 }

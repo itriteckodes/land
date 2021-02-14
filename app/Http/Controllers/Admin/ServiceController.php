@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Service;
+use App\Models\UserService;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -89,5 +90,10 @@ class ServiceController extends Controller
         $service->delete();
         toastr()->success('successfully deleted');
         return redirect()->back();
+    }
+
+    public function fetch(){
+        $services = UserService::all();
+        return view('admin.service.availed')->with('services',$services);
     }
 }

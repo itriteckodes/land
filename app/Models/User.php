@@ -23,6 +23,7 @@ class User extends Authenticatable
         'email',
         'image',
         'password',
+        'code'
     ];
 
     /**
@@ -55,5 +56,9 @@ class User extends Authenticatable
     public function getImageAttribute($value){
         
     return $this->attributes['image'] = asset($value);
+    }
+
+    public function services(){
+        return $this->belongsToMany(Service::class,'user_services');
     }
 }

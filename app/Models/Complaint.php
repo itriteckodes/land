@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Complaint extends Model
 {
     protected $fillable = [ 
-        'name','message','subject','user_id','phone'
+        'name','message','subject','user_id','phone','status'
     ];
 }

@@ -24,6 +24,7 @@ class Agent extends Authenticatable
         'password',
         'image',
         'phone',
+        'code'
     ];
 
     /**

@@ -172,6 +172,13 @@
             </li>
             
             <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.availed_services')}}">
+                <i class="ni ni-single-02 text-red"></i>
+                <span class="nav-link-text">Availed Services</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
               <a class="nav-link" href="{{route('admin.logout')}}">
                 <i class="ni ni-user-run"></i>
                 <span class="nav-link-text">logout</span>

@@ -82,7 +82,26 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="#navbar-example" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="navbar-examples">
+                <i class="ni ni-single-copy-04 text-orange"></i>
+                <span class="nav-link-text">Services</span>
+              </a>
+              <div class="collapse" id="navbar-example">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item {{(Request::is('user/complaint/create'))? 'active':''}}">
+                    <a href="{{route('user.all_serices')}}" class="nav-link">All Services</a>
+                  </li>
+                  <li class="nav-item {{(Request::is('user/complaint/'))? 'active':''}}">
+                    <a href="{{route('user.user_service')}}" class="nav-link">My Services</a>
+                  </li>
+               
+                </ul>
+              </div>
+            </li>
+                <li class="nav-item">
               <a class="nav-link" href="{{route('user.profile')}}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-text">Profile</span>

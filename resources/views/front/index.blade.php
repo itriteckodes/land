@@ -30,12 +30,7 @@
           <div class="line_1"></div>
           <div class="line_2"></div>
           <div class="line_3"></div>
-          <p class="top20 bottom40">Nor again is there anyone who loves or pursues or desires to obtain pain of itself,
-            because it is pain, but because occasionally.Nor again is there anyone who loves or pursues or desires to
-            obtain pain of itself, because it is pain, but because occasionally.Nor again is there anyone who loves or
-            pursues or desires to obtain pain of itself, because it is pain, but because occasionally.or desires to
-            obtain Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is
-            pain desires to obtain pain of itself.</p>
+          <p class="top20 bottom40">This platform is providing facility regarding properties,plots and services. Providing an ease to search plots and properties at just one click. Buying real estate in Pakistan is not only one of the most lucrative investment avenues but also a huge financial commitment. Whether you are a real estate market entrant or have several years of experience under your belt, it is imperative to undertake meticulous due diligence before signing below any dotted line. In simpler words, you need to make sure the property you are planning to buy fits your needs, budget, and lifestyle requirements.  </p>
           <a class="link_arrow dark_border top40" href="{{route('about')}}">Read More</a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -94,7 +89,7 @@
 
           <h4>A little about us and a breif history of how we started.</h4>
 
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan when an unknown printer took a galley of type and scramble. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Since due diligence is one of the most important parts of any real estate transaction and Eagle City always strives to provide you with the latest and most up-to-date information, here is a comprehensive guide that not only answers some of the most frequently asked questions or FAQs about Eagle but also explains why it is one of the hottest investment options in Lahore right now. </p>
 
           <ul>
               <li><i class="fa fa-check-square" aria-hidden="true"></i> Pleasure and praising in finding property</li>
@@ -138,9 +133,7 @@
         <div class="line_1-1"></div>
         <div class="line_2-2"></div>
         <div class="line_3-3"></div>
-        <p class="heading_space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="heading_space">Despite the fact that it is masterfully engineered with ultramodern design and features, the project is surprisingly affordable, which makes it a brilliant investment package. To further add to the convenience of investors, the payment plans for Eagle City have recently been made even more flexible than before for only a limited time. </p>
       </div>
       <div class="col-sm-1 col-md-2"></div>
     </div>
@@ -350,8 +343,7 @@
 
               <div class="services-tab-heading">
                 <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <p>Here is a comprehensive guide that not only answers some of the most frequently asked questions or FAQs about Eagle but also explains why it is one of the hottest investment options in Lahore right now</p>
               </div>
 
               <ul class="services-list">
@@ -370,342 +362,6 @@
           </div>
 
         </div>
-      </div>
-
-      <div id="menu1" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="images/service-2.jpg" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="images/service-2.jpg"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu2" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="images/service-3.jpg" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="images/service-3.jpg"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu3" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="images/service-4.jpg" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="images/service-4.jpg"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu4" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="images/service-5.jpg" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="images/service-5.jpg"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu5" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="images/service-6.jpg" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="images/service-6.jpg"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu6" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="{{asset('front/images/service-7.jpg')}}" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="{{asset('images/service-7.jpg')}}"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="menu7" class="tab-pane fade">
-
-        <div class="row">
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="recent-work-wrap">
-              <div class="team-member text-center">
-                <div class="member-thumb"> <img src="{{asset('front/images/service-8.jpg')}}" alt="image">
-                  <div class="overlay2">
-                    <div class="overlay_inner">
-                      <a class="btn-icon" data-fancybox="gallery" href="{{asset('images/service-8.jpg')}}"><i
-                          class="fa fa-search-plus" aria-hidden="true"></i></a>
-                      <a class="btn-icon" href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="services-tab-detail">
-
-              <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-
-              <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
-              </ul>
-
-              <a href="#" class="btn_fill">Read More</a>
-
-            </div>
-          </div>
-
-        </div>
-
       </div>
 
     </div>
@@ -788,172 +444,46 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
+      @foreach (App\Models\Property::all() as $property)
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="property_item heading_space">
           <div class="image">
-            <img src="{{asset('front/images/property-listing-5.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Rent</span></div>
+            <img src="{{$property->image1}}" alt="listin" class="img-responsive">
             <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
+              <div class="centered"><a class="link_arrow white_border"
+                  href="{{route('property_detail',$property->id)}}">View Detail</a></div>
+            </div>
+            <div class="price"><span class="tag">
+              @if ($property->type == 'sale')
+                  For Sale
+              @elseif($property->type == 'invest')
+                  For Investment
+              @else
+                  For Rent
+              @endif
+            </span></div>
+            <div class="property_meta">
+              <span><i class="fa fa-object-group"></i>{{$property->area}} sq ft </span>
+              <span><i class="fa fa-bed"></i>{{$property->bedrooms}}</span>
+              <span><i class="fa fa-bath"></i>{{$property->bathrooms}} Bathroom</span>
             </div>
           </div>
           <div class="proerty_content">
             <div class="proerty_text">
-              <h3><a href="property_details_1.html">South Mervin Boulevard</a></h3>
-              <span>45 Regent Street, London, UK</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
+              <h3><a href="property_details_1.html">{{$property->address}}</a></h3>
+              <span class="bottom10">{{$property->city}}</span>
+              <p><strong>PKR: {{$property->price}} </strong></p>
             </div>
             <div class="favroute clearfix">
-              <p class="pull-md-left">$8,600 </p>
-          
+              <p class="pull-left"><i class="icon-calendar2"></i> {{$property->created_at->diffForHumans()}}</p>
+
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
-          <div class="image">
-            <img src="{{asset('front/images/property-listing-2.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Rent</span></div>
-            <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
-            </div>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3><a href="property_details_1.html">The Helux villa</a></h3>
-              <span>45 Regent Street, London, UK</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
-            </div>
-            <div class="favroute clearfix">
-              <p class="pull-md-left">$5,600,000</p>
-        
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
-          <div class="image">
-            <img src="{{asset('front/images/property-listing-3.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Sale</span></div>
-            <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
-            </div>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3><a href="property_details_1.html">House in New York City</a></h3>
-              <span>Merrick Way, Miami, USA</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
-            </div>
-            <div class="favroute clearfix">
-              <p class="pull-md-left">$8,600 </p>
-       
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
-          <div class="image">
-            <img src="{{asset('front/images/property-listing-4.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Sale</span></div>
-            <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
-            </div>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3><a href="property_details_1.html">House in New York City</a></h3>
-              <span>Merrick Way, Miami, USA</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
-            </div>
-            <div class="favroute clearfix">
-              <p class="pull-md-left">$32,650,000</p>
-           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
-          <div class="image">
-            <img src="{{asset('front/images/property-listing-5.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Rent</span></div>
-            <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
-            </div>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3><a href="property_details_1.html">Triple Story</a></h3>
-              <span>Merrick Way, Miami, USA</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
-            </div>
-            <div class="favroute clearfix">
-              <p class="pull-md-left">$8, 600 </p>
-           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="property_item bottom40">
-          <div class="image">
-            <img src="{{asset('front/images/property-listing-6.jpg')}}" alt="listin" class="img-responsive">
-            <div class="property_meta">
-            <span><i class="fa fa-object-group"></i>530 sq ft </span>
-            <span><i class="fa fa-bed"></i>2</span>
-            <span><i class="fa fa-bath"></i>1 Bathroom</span></div>
-            <div class="price"><span class="tag">For Rent</span></div>
-            <div class="overlay">
-            <div class="centered"><a class="link_arrow white_border" href="property_details_1.html">View Detail</a></div>
-            </div>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3><a href="property_details_1.html">House in New York City</a></h3>
-              <span>new satellite town sargodha</span>
-              <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis…</p>
-            </div>
-            <div class="favroute clearfix">
-              <p class="pull-md-left">$1,350,000</p>
-        
-            </div>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="pager">
-          <li><a href="#.">1</a></li>
-          <li class="active"><a href="#.">2</a></li>
-          <li><a href="#.">3</a></li>
-        </ul>
-      </div>
-    </div>
+    
   </div>
 </section>
 <!-- PROPERTY LISTING -->
@@ -967,10 +497,7 @@
         <div class="image-text-eig-details">
           <h2>Eagle City</h2>
           <h5>Find your dreams with eagle city real estate?</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar est eget odio porttitor
-            molestie. Vestibulum id dui quis erat vehicula pulvinar. Duis eu felis justo, vitae viverra dui.
-            Pellentesque venenatis mi vel sapien adipiscing venenatis.onsectetur adipiscing elit. vitae viverra dui.
-            Pellentesque venenatis mi vel sapien adipiscing venenatis.</p>
+          <p>Eagle City is also a great place to live for families with children, as campuses of various reputable schools.The remarkable project of Eagle City takes this concept a step further by offering its residents around-the-clock management service that will allow them to call the admin office located in the basement whenever they require any help.Though the top-quality fittings and expensive fixtures in each apartment, as well as the regular maintenance of the building, will ensure the residents don’t face any issues for a long time, it is still comforting to know that assistance is merely a call away, if needed. </p>
           <a href="#" class="btn_fill">Contact Now</a>
         </div>
       </div>

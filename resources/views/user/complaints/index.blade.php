@@ -18,6 +18,7 @@
               <th>phone</th>
               <th>Subject</th>
               <th>Message</th>
+              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -28,6 +29,13 @@
               <td>{{$complaint->phone}}</td>
               <td>{{$complaint->subject}}</td>
               <td>{{$complaint->message}}</td>
+              <td>
+                @if ($complaint->status ==  true)
+                   Considered/Solved 
+                @else 
+                pending
+                @endif
+                </td>
                  <td>
                   <button data-toggle="modal" data-target="#delete_complaint" id="{{$complaint->id}}" class="btn btn-danger delete-btn">Delete</button>
                 </td>

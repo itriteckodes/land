@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Admin Login</title>
+  <title>Forget Password</title>
 
    <link rel="icon" href="{{asset('assets/img/brand/favicon.pn')}}g" type="image/png">
     <!-- Fonts -->
@@ -55,7 +55,7 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-              <h1 class="text-white">Welcome!</h1>
+              <h1 class="text-white">Forget Password? <br> Enter Your Email</h1>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
            
             <div class="card-body px-lg-5 py-lg-5">
              
-              <form role="form" method="POST" action="{{route('login')}}">
+              <form role="form" method="POST" action="{{route('agent.verify')}}">
                 @csrf
                 <div class="form-group mb-3">
                   <div class="input-group input-group-merge input-group-alternative">
@@ -84,19 +84,8 @@
                     <input class="form-control" placeholder="Email" type="email" name="email">
                   </div>
                 </div>
-                <div class="form-group">
-                  <div class="input-group input-group-merge input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                    </div>
-                    <input class="form-control" placeholder="Password" type="password" name="password">
-                  </div>
-                </div>
-                <div class="custom-control ">
-                  <a href="{{url('forget/password')}}">forget Password?</a>
-                </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary my-4">Sign in</button>
+                  <button type="submit" class="btn btn-primary my-4">Send verification code</button>
                 </div>
               </form>
             </div>
@@ -156,6 +145,7 @@
     <!-- Argon JS -->
     <script src="{{asset('assets/js/argon.js?v=1.1.0')}}"></script>
     <script src="{{asset('toastr/toastr.min.js')}}"></script>
+
     @toastr_render
 </body>
 

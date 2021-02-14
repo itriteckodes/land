@@ -18,6 +18,7 @@
               <th>subject</th>
               <th>Phone</th>
               <th>Message</th>
+              <th>Approve/Status</th>
             </tr>
           </thead>
           <tbody>
@@ -27,6 +28,14 @@
               <td>{{$complaint->subject}}</td>
               <td>{{$complaint->phone}}</td>
               <td>{{$complaint->message}}</td>
+              <td>
+                @if ($complaint->status == false)
+                    <a href="{{route('admin.fullfill_complaint',$complaint->id)}}" class="btn btn-success">Approve</a>
+                    
+                @else
+                    <span class="badge text-white bg-primary">Fullfilled</span>
+                @endif
+              </td>
               {{-- <td>{{$lead->garage}}</td>
               <td> <img src="{{$property->image}}" height="50px" width="80px" alt=""></td>
               <td>{{$property->address}}</td>
