@@ -14,6 +14,7 @@ class AuthController extends Controller
             'email'=>$request->email,
             'password'=>$request->password
         ];
+       
         if(Auth::attempt($cred)){
             return redirect()->intended(route('user.dashboard'));
         }

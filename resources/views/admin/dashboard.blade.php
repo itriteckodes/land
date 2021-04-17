@@ -30,7 +30,7 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title text-uppercase text-muted mb-0">Total Plots</h5>
-            <span class="h2 font-weight-bold mb-0">{{App\models\Plot::all()->count()}}</span>
+            <span class="h2 font-weight-bold mb-0">{{App\Models\Plot::all()->count()}}</span>
           </div>
           <div class="col-auto">
             <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
