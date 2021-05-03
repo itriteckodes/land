@@ -27,8 +27,9 @@
   .text-light {
     color: white;
   }
-  .bg-danger{
-    background-color:red;
+
+  .bg-danger {
+    background-color: red;
   }
 </style>
 @endsection
@@ -47,8 +48,7 @@
           <div class="item">
             <div class="property_item heading_space">
               <div class="">
-                <iframe style="width: 100%" height="500px"
-                  src="http://maps.google.com/maps?q={{$plot->lat}},{{$plot->long}}&z=15&output=embed">
+                <iframe style="width: 100%" height="500px" src="http://maps.google.com/maps?q={{$plot->lat}},{{$plot->long}}&z=15&output=embed">
                 </iframe>
                 <div class="price"><span class="tag">For Sale</span></div>
                 <div class="property_meta">
@@ -66,12 +66,10 @@
         <div class="property-tab">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab"
-                data-toggle="tab">Description</a></li>
+            <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
             <li role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a>
             </li>
-            <li role="presentation"><a href="#tab_contact" aria-controls="tab_contact" role="tab"
-                data-toggle="tab">Contact</a></li>
+            <li role="presentation"><a href="#tab_contact" aria-controls="tab_contact" role="tab" data-toggle="tab">Contact</a></li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
@@ -118,8 +116,7 @@
                   <h3 class="text-uppercase  bottom30 top10">Contact <span class="color_red">Agent</span></h3>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <div class="agent-p-img"> <img src="{{$plot->agent->image}}" height="400px" width="400px"
-                      class="img-responsive" alt="image" /> </div>
+                  <div class="agent-p-img"> <img src="{{$plot->agent->image}}" height="400px" width="400px" class="img-responsive" alt="image" /> </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="agent-p-contact">
@@ -207,8 +204,8 @@
   </div>
 </div>
 
-  <h3 style="margin-left: 150px">Following Plot is Highlighted on the Eagle City Map</h3>
-  <br>
+<h3 style="margin-left: 150px">Following Plot is Highlighted on the Eagle City Map</h3>
+<br>
 <div class="bar container">
   <section class="">
     <div class="row">
@@ -229,6 +226,18 @@
                 <h5 class="text-center py-5 text-dark">Street 1</h5>
               </div>
               <div class="col-md-12 bg-dark">
+                <h5 class=" text-center pt-5 text-light" style="padding-bottom: 100px!important;">Street 1</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center text-dark">Street 1</h5>
+              </div> -->
+              <div class="col-md-12 p-0 bg-dark" style="margin-top: 5px;">
+                <h5 class=" text-center text-light" style="padding-top: 45px!important; padding-bottom: 70px!important;">Main</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Main</h5>
+              </div> -->
+              <div class="col-md-12 bg-dark" style="margin-top: 5px;">
                 <h5 class=" text-center py-5 text-light">Street 1</h5>
               </div>
               <div class="col-md-12 bg-dark">
@@ -240,158 +249,206 @@
               <div class="col-md-12 bg-dark">
                 <h5 class="text-center py-5 text-dark">Street 1</h5>
               </div>
-              
               <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 1</h5>
+                <h5 class=" text-center text-light" style="padding-bottom: 89px!important;">Street 1</h5>
               </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 1</h5>
-              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class=" text-center text-light">Street 1</h5>
+              </div> -->
             </div>
           </div>
-          <div class="col-md-2">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="{{($plot->id ===1) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class=" {{($plot->id ===2) ? 'bg-danger':'bg-secondary'}}" >
-                  <h5 class=" text-center"  style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 ">
-                <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===4) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="col-md-1 ">
-            <div class="row mt-3">
-              <div class="col-md-12 bg-dark pt-5">
-                <h5 class=" text-center py-5 text-light">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 2</h5>
-              </div>
-              
-                <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 2</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 2</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 m-0 p-0">
+          <div class="col-md-4">
             <div class="row m-0 p-0">
               <div class="col-md-12">
-                <div class="{{($plot->id ===7) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===1) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===2) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-12 bg-dark" style="margin-top: 7px;">
+                    <h5 class="text-center" style="padding:55px 0px 60px 0px">Main</h5>
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===8) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===9) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===10) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===11) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===12) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
 
-
+              </div>
             </div>
-
           </div>
-          <div class="col-md-2 m-0 p-0">
+          <div class="col-md-1 mt-3">
+            <div class="row mt-3">
+              <div class="col-md-12 bg-dark pt-5">
+                <h5 class=" text-center py-5 text-light">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class=" text-center py-5 text-light">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class=" text-center pt-5 text-light" style="padding-bottom: 100px!important;">Street 2</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center text-dark">Street 1</h5>
+              </div> -->
+              <div class="col-md-12 m-4 bg-dark" style="margin-top: 5px;border-radius:48%">
+                <h5 class=" text-center text-light" style="padding-top: 45px!important; padding-bottom: 70px!important;">Main</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Main</h5>
+              </div> -->
+              <div class="col-md-12 bg-dark" style="margin-top: 5px;">
+                <h5 class=" text-center py-5 text-light">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class=" text-center py-5 text-light">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Street 2</h5>
+              </div>
+              <div class="col-md-12 bg-dark">
+                <h5 class=" text-center text-light" style="padding-bottom: 89px!important;">Street 2</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class=" text-center text-light">Street 1</h5>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-4">
             <div class="row m-0 p-0">
               <div class="col-md-12">
-                <div class="{{($plot->id ===13) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===1) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===2) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-12 bg-dark" style="margin-top: 7px;">
+                      <h5 class="text-center" style="padding:55px 0px 60px 0px">Main</h5>
+                   </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                      <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===14) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===15) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===16) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===17) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===18) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
+
               </div>
             </div>
           </div>
-          <div class="col-md-1 ">
+          <div class="col-md-1 mt-4">
             <div class="row mt-3">
               <div class="col-md-12 bg-dark pt-5">
                 <h5 class=" text-center py-5 text-light">Street 3</h5>
@@ -406,6 +463,18 @@
                 <h5 class="text-center py-5 text-dark">Street 3</h5>
               </div>
               <div class="col-md-12 bg-dark">
+                <h5 class=" text-center pt-5 text-light" style="padding-bottom: 100px!important;">Street 3</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center text-dark">Street 1</h5>
+              </div> -->
+              <div class="col-md-12 p-0 bg-dark" style="margin-top: 5px;">
+                <h5 class=" text-center text-light" style="padding-top: 45px!important; padding-bottom: 70px!important;">Main</h5>
+              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class="text-center py-5 text-dark">Main</h5>
+              </div> -->
+              <div class="col-md-12 bg-dark" style="margin-top: 5px;">
                 <h5 class=" text-center py-5 text-light">Street 3</h5>
               </div>
               <div class="col-md-12 bg-dark">
@@ -417,82 +486,12 @@
               <div class="col-md-12 bg-dark">
                 <h5 class="text-center py-5 text-dark">Street 3</h5>
               </div>
-                   <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 3</h5>
-              </div>
               <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 3</h5>
+                <h5 class=" text-center text-light" style="padding-bottom: 89px!important;">Street 3</h5>
               </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="{{($plot->id ===19) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="{{($plot->id ===20) ? 'bg-danger':'bg-secondary'}}" >
-                  <h5 class=" text-center"  style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 ">
-                <div class="{{($plot->id ===21) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class=" text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===22) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===23) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-              <div class="col-md-12 mt-1">
-                <div class="{{($plot->id ===24) ? 'bg-danger':'bg-secondary'}}">
-                  <h5 class="text-center" style="padding:55px">6x4</h5>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="col-md-1 ">
-            <div class="row mt-3">
-              <div class="col-md-12 bg-dark pt-5">
-                <h5 class=" text-center py-5 text-light">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class=" text-center py-5 text-light">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-light">Street 4</h5>
-              </div>
-              <div class="col-md-12 bg-dark">
-                <h5 class="text-center py-5 text-dark">Street 4</h5>
-              </div>
+              <!-- <div class="col-md-12 bg-dark">
+                <h5 class=" text-center text-light">Street 1</h5>
+              </div> -->
             </div>
           </div>
         </div>
