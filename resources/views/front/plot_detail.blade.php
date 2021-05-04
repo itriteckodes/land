@@ -296,32 +296,32 @@
                     
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===7) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===8) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===9) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===10) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===11) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===12) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
@@ -351,7 +351,7 @@
                 <h5 class="text-center text-dark">Street 1</h5>
               </div> -->
               <div class="col-md-12 m-4 bg-dark" style="margin-top: 5px;border-radius:48%">
-                <h5 class=" text-center text-light" style="padding-top: 45px!important; padding-bottom: 70px!important;">Main</h5>
+                <h5 class=" text-center text-light" style="padding-top: 45px!important; padding-bottom: 70px!important;">Roundabout </h5>
               </div>
               <!-- <div class="col-md-12 bg-dark">
                 <h5 class="text-center py-5 text-dark">Main</h5>
@@ -381,32 +381,32 @@
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===1) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===13) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===2) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===14) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===15) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===16) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===17) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===18) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
@@ -414,32 +414,32 @@
                       <h5 class="text-center" style="padding:55px 0px 60px 0px">Main</h5>
                    </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===19) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===20) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===21) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===22) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===5) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===23) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===6) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===24) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
