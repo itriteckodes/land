@@ -1,16 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Agent;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Jobs\TestJob;
-use App\Models\Plot;
 use App\Models\Token;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class PlotController extends Controller
+class TokenController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +16,8 @@ class PlotController extends Controller
      */
     public function index()
     {
-        $plots = Plot::where('agent_id',Auth::user()->id)->get();
-        return view('agent.plot.index')->with('plots',$plots);
+        $tokens = Token::where('user_id',Auth::user()->id)->get();
+        return view('user.token.index')->with('tokens',$tokens);
     }
 
     /**
@@ -28,9 +25,9 @@ class PlotController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        return view('agent.plot.add');  
+        
     }
 
     /**
@@ -41,32 +38,34 @@ class PlotController extends Controller
      */
     public function store(Request $request)
     {
-        Plot::create([
-            'agent_id' => Auth::guard('agent')->user()->id
-        ]+$request->all());
-        toastr()->success('plot added successfully');
+        $token = Token::create($request->all());
+        toastr()->success('Token Reserved Succefully');
         return redirect()->back();
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Plot  $plot
+     * @param  \App\Models\Token  $token
      * @return \Illuminate\Http\Response
      */
-    public function show(Plot $plot)
+    public function show(Token $token)
     {
-        $tokens = $plot->tokens;
-        return view('agent.plot.token')->with('tokens',$tokens);
+        $token->update([
+            'status'=>true
+        ]);
+        toastr()->success('Agent will Contact You Soon','Thank You');
+        return redirect()->back();
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Plot  $plot
+     * @param  \App\Models\Token  $token
      * @return \Illuminate\Http\Response
      */
-    public function edit(Plot $plot)
+    public function edit(Token $token)
     {
         //
     }
@@ -75,30 +74,22 @@ class PlotController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Plot  $plot
+     * @param  \App\Models\Token  $token
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Plot $plot)
+    public function update(Request $request, Token $token)
     {
-       
-       $plot->update($request->all());
-       toastr()->success('successfully updated');
-       return redirect()->back();
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Plot  $plot
+     * @param  \App\Models\Token  $token
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Plot $plot)
+    public function destroy(Token $token)
     {
-        
-        $plot->delete();
-       toastr()->success('successfully deleted');
-       return redirect()->back();
+        //
     }
-    
-   
 }

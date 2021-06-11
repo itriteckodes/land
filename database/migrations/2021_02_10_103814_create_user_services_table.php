@@ -19,6 +19,7 @@ class CreateUserServicesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreignId('service_id');
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

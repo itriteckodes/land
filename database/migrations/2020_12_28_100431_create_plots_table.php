@@ -27,6 +27,7 @@ class CreatePlotsTable extends Migration
             $table->bigInteger('price');
             $table->text('description');
             $table->string('marla');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

@@ -50,11 +50,15 @@ Route::group(['prefix'=> 'user','namespace' => 'App\Http\Controllers\User', 'as'
   Route::group(['middleware' => ['auth'] ], function () {
     Route::get('dashboard','UserController@dashboard')->name('dashboard');
     Route::resource('complaint', 'ComplaintController');
+    Route::resource('token', 'TokenController');
     Route::post('update_profile', 'UserController@update_profile')->name('update_profile');
     Route::get('update/profile', 'UserController@profile')->name('profile');
     Route::get('services/list', 'ServiceController@index')->name('all_serices');
     Route::get('avail/service/{id}', 'ServiceController@avail')->name('avail_service');
     Route::get('user/services', 'ServiceController@userService')->name('user_service');
+    Route::post('services/payment', 'ServiceController@servicepayment')->name('service.payment');
+    
+    Route::post('services/pay', 'ServiceController@servicepay')->name('service.pay');
     Route::get('logout', 'AuthController@logout')->name('logout');
   });
 });
@@ -98,7 +102,8 @@ Route::group(['middleware' => ['auth:agent'] ], function () {
     Route::get('profile','AgentController@profile')->name('profile');                                
     Route::post('update/profile','AgentController@update_profile')->name('update_profile');   
     Route::get('lead/plots','LeadController@plots')->name('lead_plots');                             
-    Route::get('lead/properties','LeadController@properties')->name('lead_properties');                             
+    Route::get('lead/properties','LeadController@properties')->name('lead_properties');     
+     Route::get('token','PlotController@tokens')->name('token.index');                             
 
 });
 });

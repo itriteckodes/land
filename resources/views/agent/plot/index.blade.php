@@ -23,6 +23,7 @@
               <th>Discription</th>
               <th>Action</th>
               <th>Action</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -35,6 +36,11 @@
               <td>{{$plot->address}}</td>
               <td>{{$plot->block}}</td>
               <td>{{$plot->description}}</td>
+              <td>
+                <a href="{{route('agent.plot.show',$plot->id)}}">
+                <button class="btn btn-success delete-btn">Token Reserved</button>
+                </a>
+              </td>
               <td><a href="" id="{{$plot->id}}" plot="{{$plot}}" title="{{$plot->title}}" area="{{$plot->area}}"
                   address="{{$plot->address}}" block="{{$plot->block}}" disc="{{$plot->description}}" data-toggle="modal"
                   data-target="#edit_plot" class="btn btn-primary edit-btn">Edit</a></td>

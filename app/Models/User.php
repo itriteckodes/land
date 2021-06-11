@@ -22,10 +22,10 @@ class User extends Authenticatable
         'name',
         'email',
         'image',
-        'password',
+      'password',
         'code'
     ];
-
+    
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -60,5 +60,6 @@ class User extends Authenticatable
 
     public function services(){
         return $this->belongsToMany(Service::class,'user_services');
-    }
+    } 
+    
 }

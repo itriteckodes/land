@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Eagle City || Agent</title>
+  <title>Eagle City || User</title>
   <!-- Favicon -->
   <link rel="icon" href="{{asset('assets/img/brand/favicon.pn')}}g" type="image/png">
   <!-- Fonts -->
@@ -93,6 +93,25 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item {{(Request::is('user/complaint/create'))? 'active':''}}">
                     <a href="{{route('user.all_serices')}}" class="nav-link">All Services</a>
+                  </li>
+                  <li class="nav-item {{(Request::is('user/complaint/'))? 'active':''}}">
+                    <a href="{{route('user.user_service')}}" class="nav-link">My Services</a>
+                  </li>
+               
+                </ul>
+              </div>
+            </li>  
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="#navbar-example" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="navbar-examples">
+                <i class="ni ni-single-copy-04 text-orange"></i>
+                <span class="nav-link-text">Token</span>
+              </a>
+              <div class="collapse" id="navbar-example">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="{{route('user.token.index')}}" class="nav-link">Reserved Token</a>
                   </li>
                   <li class="nav-item {{(Request::is('user/complaint/'))? 'active':''}}">
                     <a href="{{route('user.user_service')}}" class="nav-link">My Services</a>
