@@ -16,8 +16,6 @@ use Stripe\Stripe;
 class ServiceController extends Controller
 {
     public function index(){
-        
-
         $user = Auth::user();
        $availed_services =  $user->services;
         $services = Service::all();
@@ -52,6 +50,7 @@ class ServiceController extends Controller
 
     public function servicepayment(Request $request)
     {
+
         $amount = $request->payment;
         $user = User::find($request->id);
         $random = Str::random(60);
@@ -75,6 +74,8 @@ class ServiceController extends Controller
             ]);
         }
         toastr()->success('Payment Success','Done');
-        return redirect()->back();
+        $user = Auth::user();
+        $services =  $user->services;
+        return view('user.service.print')->with('services',$services)->with('monthly',$request->amount);
     }
 }

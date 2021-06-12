@@ -19,8 +19,8 @@ class PlotController extends Controller
      */
     public function index()
     {
-        $plots = Plot::where('agent_id',Auth::user()->id)->get();
-        return view('agent.plot.index')->with('plots',$plots);
+        $plots = Plot::where('agent_id', Auth::user()->id)->get();
+        return view('agent.plot.index')->with('plots', $plots);
     }
 
     /**
@@ -30,7 +30,7 @@ class PlotController extends Controller
      */
     public function create()
     {
-        return view('agent.plot.add');  
+        return view('agent.plot.add');
     }
 
     /**
@@ -43,7 +43,7 @@ class PlotController extends Controller
     {
         Plot::create([
             'agent_id' => Auth::guard('agent')->user()->id
-        ]+$request->all());
+        ] + $request->all());
         toastr()->success('plot added successfully');
         return redirect()->back();
     }
@@ -57,7 +57,7 @@ class PlotController extends Controller
     public function show(Plot $plot)
     {
         $tokens = $plot->tokens;
-        return view('agent.plot.token')->with('tokens',$tokens);
+        return view('agent.plot.token')->with('tokens', $tokens);
     }
 
     /**
@@ -80,10 +80,10 @@ class PlotController extends Controller
      */
     public function update(Request $request, Plot $plot)
     {
-       
-       $plot->update($request->all());
-       toastr()->success('successfully updated');
-       return redirect()->back();
+
+        $plot->update($request->all());
+        toastr()->success('successfully updated');
+        return redirect()->back();
     }
 
     /**
@@ -94,11 +94,9 @@ class PlotController extends Controller
      */
     public function destroy(Plot $plot)
     {
-        
+
         $plot->delete();
-       toastr()->success('successfully deleted');
-       return redirect()->back();
+        toastr()->success('successfully deleted');
+        return redirect()->back();
     }
-    
-   
 }
