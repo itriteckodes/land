@@ -22,6 +22,7 @@
               <th>salary</th>
               <th>category</th>
               <th>address</th>
+              <th>No of Salaries</th>
               <th>Action</th>
               <th>Action</th>
               <th>Pay</th>
@@ -40,6 +41,7 @@
               <td>{{$employee->salary}}</td>
               <td>{{$employee->category}}</td>
               <td>{{$employee->address}}</td>
+              <td>{{$employee->payments->count()}}</td>
               <td><button id="{{$employee->id}}" name="{{$employee->name}}" job_title="{{$employee->job_title}}"
                   rank="{{$employee->rank}}" phone="{{$employee->phone}}" salary="{{$employee->salary}}"
                   address="{{$employee->address}}" data-toggle="modal" data-target="#edit_employee"
@@ -48,8 +50,14 @@
                 <button data-toggle="modal" data-target="#delete_employee" id="{{$employee->id}}"
                   class="btn btn-danger delete-btn">Delete</button>
               </td>
-              <td><a data-toggle="modal" data-target="#pay" id="pay_employee" employee_id="{{$employee->id}}"
-                  class="btn btn-success text-white">Pay</a></td>
+              <td>
+              @if ((App\Models\Payment::where('employee_id',$employee->id)->whereMonth('created_at',Carbon\Carbon::now())->get()->count())< 1)   
+              <a data-toggle="modal" data-target="#pay" id="pay_employee" employee_id="{{$employee->id}}"
+                  class="btn btn-success text-white">Pay</a>
+              @else
+              <h2 class="text-success">Paid</h2>   
+             @endif
+            </td>
             </tr>
             @endforeach
           </tbody>
@@ -170,7 +178,7 @@
           <input type="hidden" name="employee_id" id="emp_id">
           <div class="text-right mt-2">
             <button type="button" class="mr-2 btn waves-effect waves-light red modal-close">cancel</button>
-            <button type="submit" class=" btn btn-danger">Pay Now</button>
+            <button type="submit" class=" btn btn-danger payment">Pay Now</button>
           </div>
 
         </form>
@@ -226,8 +234,10 @@
       });
 </script>
 <script>
+
+$('.payment').on('click',function(){
   printDiv();
-      
+})
       function printDiv() {
       
           var divToPrint=document.getElementById('DivIdToPrint');
@@ -243,7 +253,7 @@
               newWin.print();
               newWin.close();
               window.history.back();
-          },1500);  
+          },10);  
       }
   
       

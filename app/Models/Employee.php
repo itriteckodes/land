@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
    protected $fillable = [ 
-       'job_title','fname','lname' ,'rank','image','salary','phone','address','cnic','category'
+       'job_title','fname','lname' ,'rank','image','salary','phone','address','cnic','category','join_date'
    ];
 
    public function setImageAttribute($value){
@@ -20,5 +20,9 @@ class Employee extends Model
     public function getImageAttribute($value){
        
     return $this->attributes['image'] = asset($value);
+    }
+
+    public function payments(){
+        return $this->hasMany(Payment::class);
     }
 }

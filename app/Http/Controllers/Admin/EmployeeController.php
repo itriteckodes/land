@@ -16,7 +16,8 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $employees = Employee::all();
+        
+        $employees = Employee::all()->sortBy('fname');
         return view('admin.employee.index')->with('employees',$employees);
     }
 
@@ -87,6 +88,7 @@ class EmployeeController extends Controller
      */
     public function destroy(Employee $employee)
     {
+        dd($employee->payments);
         $employee->delete();
         toastr()->success('successfully deleted');
         return redirect()->back();

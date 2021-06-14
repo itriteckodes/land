@@ -9,24 +9,31 @@
       <form action="{{route('admin.employee.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
               <label class="form-control-label" for="example3cols1Input">First Name</label>
               <input type="text" name="fname" class="form-control" id="example3cols1Input">
             </div>
           </div>
           
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
               <label class="form-control-label" for="example3cols1Input">Last Name</label>
               <input type="text" name="lname" class="form-control" id="example3cols1Input">
             </div>
           </div>
           
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
               <label class="form-control-label" for="example3cols1Input">Job Title</label>
               <input type="text" name="job_title" class="form-control" id="example3cols1Input">
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="form-group">
+              <label class="form-control-label" for="example3cols1Input">Join Date</label>
+              <input type="date" name="join_date" class="form-control" id="example3cols1Input">
             </div>
           </div>
        

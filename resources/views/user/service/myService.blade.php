@@ -24,7 +24,7 @@
               <th>Price</th>
               <th>Availed</th>
               <th>Description</th>
-              <th></th>
+              <th>Due Date</th>
             </tr>
           </thead>
           <tbody>
@@ -36,6 +36,7 @@
               <td>{{$service->price}}</td>
               <td>{{$service->created_at->diffForHumans()}}</td>
               <td>{{$service->description}}</td>
+              <td>05/{{Carbon\Carbon::now()->addMonth()->format('m/Y')}}</td>
             </tr>
             @endforeach
           </tbody>
@@ -105,6 +106,7 @@
                             <th>Price</th>
                             <th>Availed</th>
                             <th>Description</th>
+                            <th>Due Date</th>
                           </tr>
                       </thead>
                       <tbody id="printbody">
@@ -115,6 +117,7 @@
                           <td>{{$service->price}}</td>
                           <td>{{$service->created_at->diffForHumans()}}</td>
                           <td>{{$service->description}}</td>
+                          <td>05/{{Carbon\Carbon::now()->addMonth()->format('m/Y')}}</td>
                         </tr>
                         @endforeach
 

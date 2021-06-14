@@ -18,6 +18,8 @@
               <th>Plot Image</th>
               <th>Plot Price</th>
               <th>Your Price</th>
+              <th>Down Payment</th>
+              <th>InstallMent</th>
               <th>Description</th>
               <th>Action</th>
             </tr>
@@ -30,6 +32,8 @@
               <td><img src="{{$token->plot->image}}" height="50px" width="80px" alt=""></td>
               <td>{{$token->plot->price}}</td>
               <td>{{$token->price}}</td>
+              <td>{{round(($token->plot->price)*(0.1))}}</td>
+              <td>{{round((($token->plot->price)-(($token->plot->price)*(0.1)))/8)}}</td>
               <td>{{$token->desc}}</td>
               <td>
                   @if ($token->status == false)

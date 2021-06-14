@@ -25,6 +25,7 @@ class CreateEmployeesTable extends Migration
             $table->bigInteger('phone');
             $table->string('address');
             $table->string('category');
+            $table->date('join_date');
             $table->timestamps();
         });
     }

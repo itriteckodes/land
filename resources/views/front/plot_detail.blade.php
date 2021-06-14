@@ -66,10 +66,10 @@
       <div class="col-md-12 text-center">
         @if (Auth::user())
         <button data-toggle="modal"
-        data-target="#edit_modal" class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Reserve Token</h4>    
+        data-target="#edit_modal" class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Add To Bookings List</h4>    
         </button>
         @else
-          <a href="{{route('user.login')}}"><button  class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger"> Login to Reserve Token</h4>    
+          <a href="{{route('user.login')}}"><button  class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Login for Booking</h4>    
           </button></a>
         
 
@@ -530,7 +530,7 @@
           <input type="hidden" name="agent_id" value="{{$plot->agent_id}}">
           <div class="modal-content">
               <div class="modal-header">
-                  <h3 class="modal-title mt-0" id="myModalLabel">Reserve Token</h3>
+                  <h3 class="modal-title mt-0" id="myModalLabel">Add To Bookings</h3>
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
               <div class="modal-body">
@@ -557,7 +557,7 @@
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Cancel</button>
-                  <button type="submit" id="submit" class="btn btn-primary waves-effect waves-light">Reserve</button>
+                  <button type="submit" id="submit" class="btn btn-primary waves-effect waves-light">Book Now</button>
               </div>
           </div>
       </form>

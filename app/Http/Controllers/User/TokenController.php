@@ -39,7 +39,7 @@ class TokenController extends Controller
     public function store(Request $request)
     {
         $token = Token::create($request->all());
-        toastr()->success('Token Reserved Succefully');
+        toastr()->success('Added To Bookings Succefully');
         return redirect()->back();
 
     }

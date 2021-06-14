@@ -56,9 +56,9 @@
                       <ul>
                         <li><a href="{{route('agent.dashboard')}}"><i class="icon-icons215"></i>Agent</a></li>
                         <li class="af-line"></li>
-                        
+{{--                         
                         <li><a href="{{route('user.dashboard')}}"><i class="icon-icons215"></i>Dashboard</a></li>
-                        <li class="af-line"></li>
+                        <li class="af-line"></li> --}}
                           <li><a href="{{route('user.login')}}" ><i class="icon-icons179"></i><strong>Login/Register</strong></a></li>
                       </ul>
                   </div>
@@ -158,7 +158,7 @@
                           </li>
 
                           <li class="{{(Request::is('properties'))? 'active':''}}">
-                              <a href="{{route('properties')}}">Buildings</a>
+                              <a href="{{route('properties')}}">Properties</a>
                           </li>
 
                           <li class="{{(Request::is('maps'))? 'active':''}}">

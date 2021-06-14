@@ -94,6 +94,10 @@
                           <input class="form-check-input" type="radio" value="10" name="marla" >
                           <label class="form-check-label">10 Marla</label>
                         </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" value="20" name="marla" >
+                          <label class="form-check-label">1 Kanal</label>
+                        </div>
                       </div>
                 </div>
             </div>
