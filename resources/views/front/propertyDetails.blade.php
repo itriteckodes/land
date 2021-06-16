@@ -89,6 +89,21 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-md-12 text-center">
+        @if (Auth::user())
+        <button data-toggle="modal"
+        data-target="#edit_modal" class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Add To Bookings List</h4>    
+        </button>
+        @else
+          <a href="{{route('user.login')}}"><button  class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Login for Booking</h4>    
+          </button></a>
+        
+
+          @endif
+    
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12">
         <div class="property-tab">
           <!-- Nav tabs -->
@@ -230,6 +245,53 @@
   </div>
   </div>
 </section>
+
+<div id="edit_modal" class="modal fade">
+  <div class="modal-dialog">
+      <form action="{{route('user.token.store')}}" method="POST" enctype="multipart/form-data" >
+          @csrf
+   
+          <input type="hidden" name="user_id" value=" @if (Auth::user())
+          {{Auth::user()->id}}">
+          @endif
+          
+          <input type="hidden" name="property_id" value="{{$property->id}}">
+          <input type="hidden" name="agent_id" value="{{$property->agent_id}}">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title mt-0" id="myModalLabel">Add To Bookings</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" name="name" required>
+                  </div> 
+                  <div class="form-group">
+                      <label for="name">Email</label>
+                      <input type="email" class="form-control" name="email" required>
+                  </div>
+                 <div class="form-group">
+                      <label for="name">Phone</label>
+                      <input type="number" class="form-control" name="phone" required>
+                  </div>
+                 <div class="form-group">
+                      <label for="name">Price</label>
+                      <input type="number" class="form-control" name="price" required>
+                  </div>
+                 <div class="form-group">
+                      <label for="name">Description</label>
+                      <textarea class="form-control" id="" name="desc"></textarea>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Cancel</button>
+                  <button type="submit" id="submit" class="btn btn-primary waves-effect waves-light">Book Now</button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
 
 {{-- <div class="container">
   <div class="row">

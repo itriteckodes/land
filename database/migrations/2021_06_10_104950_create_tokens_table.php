@@ -23,8 +23,9 @@ class CreateTokensTable extends Migration
             $table->boolean('status')->default(false);
             $table->foreignId('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreignId('plot_id');
-            $table->foreign('plot_id')->references('id')->on('plots')->onDelete('cascade');
+            $table->foreignId('plot_id')->nullable();
+            $table->foreign('plot_id')->references('id')->on('plots')->onDelete('cascade'); $table->foreignId('property_id')->nullable();
+            $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
             $table->foreignId('agent_id');
             $table->foreign('agent_id')->references('id')->on('agents')->onDelete('cascade');
             $table->timestamps();

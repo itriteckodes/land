@@ -111,10 +111,10 @@
               <div class="collapse" id="navbar-example">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="{{route('user.token.index')}}" class="nav-link">Bookings</a>
+                    <a href="{{route('user.token.index')}}" class="nav-link">Plot Bookings</a>
                   </li>
                   <li class="nav-item {{(Request::is('user/complaint/'))? 'active':''}}">
-                    <a href="{{route('user.user_service')}}" class="nav-link">My Services</a>
+                    <a href="{{route('user.token.property')}}" class="nav-link">Property Bookings</a>
                   </li>
                
                 </ul>

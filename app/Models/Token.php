@@ -17,11 +17,16 @@ class Token extends Model
         'desc',
         'user_id',
         'plot_id',
+        'property_id',
         'agent_id',
         'status'
     ];
 
     public function plot(){
         return $this->belongsTo(Plot::class);
+    }
+    
+    public function property(){
+        return $this->belongsTo(Property::class);
     } 
 }

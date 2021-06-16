@@ -22,15 +22,18 @@ class CreatePropertiesTable extends Migration
             $table->integer('bedrooms');
             $table->integer('bathrooms');
             $table->integer('garage');
-            $table->string('image1');
-            $table->string('image2');
-            $table->string('image3');
+            $table->string('image1')->default('usman.jpg');
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
             $table->string('type');
             $table->text('address');
             $table->string('block');
             $table->string('marla');
             $table->bigInteger('price');
+            $table->foreignId('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->text('description');
+            $table->boolean('occupy')->default(false);
             $table->timestamps();
         });
     }
