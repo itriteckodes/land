@@ -196,6 +196,10 @@
                         <div class="single-query">
                           <input type="email" name="email" placeholder="Email Adress" class="keyword-input">
                         </div>
+                        
+                        <div class="single-query">
+                          <input type="number" name="token_amount" placeholder="Token Amount" class="keyword-input">
+                        </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="single-query">

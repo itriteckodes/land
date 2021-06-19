@@ -11,10 +11,9 @@ class AuthController extends Controller
     public function login(Request $request){
         
         $cred = [
-            'email'=>$request->email,
+            'email'=> $request->email,
             'password'=>$request->password
         ];
-       
         if(Auth::attempt($cred)){
             return redirect()->intended(route('user.dashboard'));
         }

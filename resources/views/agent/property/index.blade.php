@@ -17,6 +17,7 @@
               <th>Name</th>
               <th>Area</th>
               <th>Marla</th>
+              <th>price</th>
               <th>Bedrooms</th>
               <th>Bathroms</th>
               <th>Garage</th>
@@ -34,6 +35,7 @@
               <td>{{$property->title}}</td>
               <td>{{$property->area}}</td>
               <td>{{$property->marla}}</td>
+              <td>{{$property->price}}</td>
               <td>{{$property->bedrooms}}</td>
               <td>{{$property->bathrooms}}</td>
               <td>{{$property->garage}}</td>

@@ -37,8 +37,8 @@ Route::get('/', function () {
   Route::view('agent/login','login')->name('agent.login');
   Route::post('login','App\Http\Controllers\AuthController@login')->name('login');
 
-Route::post('user/register','App\Http\Controllers\User\UserController@store')->name('user.register');
-Route::post('user/login','App\Http\Controllers\User\AuthController@login')->name('user.login');
+  Route::post('user/register','App\Http\Controllers\User\UserController@store')->name('user.register');
+  Route::post('user/login','App\Http\Controllers\User\AuthController@login')->name('user.login');
 
 Route::view('forget/user/password','user.forget');                             
 

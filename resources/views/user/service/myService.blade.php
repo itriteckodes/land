@@ -24,6 +24,7 @@
               <th>Price</th>
               <th>Availed</th>
               <th>Description</th>
+              <th>Status</th>
               <th>Due Date</th>
             </tr>
           </thead>
@@ -36,6 +37,11 @@
               <td>{{$service->price}}</td>
               <td>{{$service->created_at->diffForHumans()}}</td>
               <td>{{$service->description}}</td>
+              <td>@if (!$monthly)
+                  paid
+                @else   
+                ---
+              @endif</td>
               <td>05/{{Carbon\Carbon::now()->addMonth()->format('m/Y')}}</td>
             </tr>
             @endforeach

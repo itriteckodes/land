@@ -23,6 +23,7 @@
             </tr>
           </thead>
           <tbody>
+            
             @foreach ($services as $key=>$service)
             <tr>
               <td>{{$key+1}}</td>

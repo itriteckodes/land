@@ -18,6 +18,7 @@ class CreateLeadsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->bigInteger('phone');
+            $table->bigInteger('token_amount');
             $table->text('message');
             $table->foreignId('plot_id')->nullable();
             $table->foreign('plot_id')->references('id')->on('plots')->onDelete('cascade');

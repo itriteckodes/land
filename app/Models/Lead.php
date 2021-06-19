@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Lead extends Model
 {
     protected $fillable = [ 
-        'name','phone','email','message','property_id','plot_id','service_id'
+        'name','phone','email','message','property_id','plot_id','service_id','token_amount'
     ];
 
     public function plot(){

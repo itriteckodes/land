@@ -10,11 +10,13 @@ use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
+
     public function store(Request $request){
         User::create($request->all());
-        toastr()->info('you are registered successfully');
+        toastr()->warning('you are registered successfully');
         return redirect()->back();
     }
+
     public function dashboard(){
         return view('user.dashboard');
     }
