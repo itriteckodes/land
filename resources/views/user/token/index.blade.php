@@ -36,12 +36,12 @@
               <td>{{round((($token->plot->price)-(($token->plot->price)*(0.1)))/8)}}</td>
               <td>{{$token->desc}}</td>
               <td>
-                  @if ($token->status == false)
-                      <a class="btn btn-primary btn-sm" href="{{route('user.token.show',$token->id)}}">Book Plot</a>
+                @if ($token->status == false)
+                <a class="btn btn-primary btn-sm" href="{{route('user.token.show',$token->id)}}">Pay Down Payment</a>
 
-                      @else
-                      <span class="text-danger font-weight-bolder">PENDING</span>
-                  @endif</td>
+                @else
+                <span class="text-danger font-weight-bolder">{{Carbon\Carbon::parse($token->updated_at)->addMonth()->format('d/m/Y')}}</span>
+            @endif</td>
             </tr>
             @endforeach
         </tbody>

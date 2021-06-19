@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Plot extends Model
 {
     protected $fillable = [
-        'title','agent_id','area','image','description','address','block','lat','long','price','marla','status'
+        'title','agent_id','area','image','description','address','block','lat','long','price','marla','status','occupy','user_id'
        ];
 
        public function setImageAttribute($value){
@@ -24,6 +24,10 @@ class Plot extends Model
 
     public function agent(){
         return $this->belongsTo(Agent::class);
+    }
+    
+    public function user(){
+        return $this->belongsTo(User::class);
     }
     
     public function tokens(){

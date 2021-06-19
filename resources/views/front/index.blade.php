@@ -224,7 +224,7 @@
         </div>
 
         <div class="col-lg-8 col-md-8">
-          <h5>We help to improve your online business</h5>
+          <h5>Register in Eagle City</h5>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="feature-text left-icon">
@@ -232,8 +232,8 @@
                   <i class="icon-library"></i>
                 </div>
                 <div class="feature-info">
-                  <h5>Residential Services</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                  <h5>Manual Registration</h5>
+                  <a href="{{ route('download') }}" class="btn btn-danger">DownLoad Form</a>
                 </div>
               </div>
             </div>
@@ -243,8 +243,8 @@
                   <i class="icon-office"></i>
                 </div>
                 <div class="feature-info">
-                  <h5>Commercial Sections</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                  <h5>Online Registration</h5>
+                  <button class="btn btn-danger">Register</button>
                 </div>
               </div>
             </div>

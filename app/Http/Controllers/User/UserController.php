@@ -4,9 +4,12 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -79,5 +82,11 @@ class UserController extends Controller
         }
         toastr()->success('Password reset successfuly');
         return redirect()->route('user.login');
+    }
+
+    public function download(){
+        $file = public_path()."/register.pdf";
+        $headers = array('Content-Type: application/pdf',);
+        return Response::download($file, 'register.pdf',$headers);
     }
 }

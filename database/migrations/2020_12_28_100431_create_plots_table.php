@@ -19,15 +19,18 @@ class CreatePlotsTable extends Migration
             $table->foreign('agent_id')->references('id')->on('agents')->onDelete('cascade');
             $table->string('title');
             $table->bigInteger('area');
-            $table->string('image');
+            $table->string('image')->default('usman.jpg');
             $table->text('address');
             $table->string('block');
             $table->string('lat');
             $table->string('long');
             $table->bigInteger('price');
             $table->text('description');
+            $table->foreignId('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('marla');
             $table->boolean('status')->default(false);
+            $table->boolean('occupy')->default(false);
             $table->timestamps();
         });
     }

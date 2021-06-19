@@ -62,4 +62,11 @@ class User extends Authenticatable
         return $this->belongsToMany(Service::class,'user_services');
     } 
     
+    public function plots(){
+        return $this->hasmany(Plot::class);
+    }
+
+    public function properties(){
+        return $this->hasmany(Property::class);
+    }
 }

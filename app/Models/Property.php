@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Property extends Model
 {
    protected $fillable = [
-    'title','agent_id','area','bedrooms','bathrooms','garage','image1','image2','image3','description','address','block','price','type','marla'
+    'title','agent_id','area','bedrooms','bathrooms','garage','image1','image2','image3','description','address','block','price','type','marla','occupy','user_id'
    ];
 
    public function setImage1Attribute($value){
@@ -41,5 +41,13 @@ class Property extends Model
     }
     public function agent(){
         return $this->belongsTo(Agent::class);
+    }   
+    
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+    
+    public function tokens(){
+        return $this->hasmany(Token::class);
     }
 }

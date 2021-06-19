@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
   Route::get('agents','App\Http\Controllers\AgentController@index')->name('agents');
+  Route::get('download','App\Http\Controllers\User\UserController@download')->name('download');
   Route::get('services','App\Http\Controllers\ServiceController@services')->name('services');
   Route::view('about','front.about')->name('about');
   Route::view('contact','front.contact')->name('contact');
@@ -49,8 +50,11 @@ Route::group(['prefix'=> 'user','namespace' => 'App\Http\Controllers\User', 'as'
 
   Route::group(['middleware' => ['auth'] ], function () {
     Route::get('dashboard','UserController@dashboard')->name('dashboard');
+    Route::get('booking/property','TokenController@property')->name('token.property');
     Route::resource('complaint', 'ComplaintController');
     Route::resource('token', 'TokenController');
+    
+    Route::post('booking/pay', 'TokenController@tokenpay')->name('token.pay');
     Route::post('update_profile', 'UserController@update_profile')->name('update_profile');
     Route::get('update/profile', 'UserController@profile')->name('profile');
     Route::get('services/list', 'ServiceController@index')->name('all_serices');
