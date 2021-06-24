@@ -112,7 +112,7 @@
   </div>
   <div class="col-xl-3 col-md-6">
     <div class="card card-stats">
-      <!-- Card body -->
+     <a href="{{route('admin.sold_plots')}}">
       <div class="card-body">
         <div class="row">
           <div class="col">
@@ -129,11 +129,13 @@
        
         </p>
       </div>
+    </a>
     </div>
   </div>
   <div class="col-xl-3 col-md-6">
     <div class="card card-stats">
-      <!-- Card body -->
+      <a href="{{route('admin.sold_props')}}">
+
       <div class="card-body">
         <div class="row">
           <div class="col">
@@ -150,6 +152,7 @@
         
         </p>
       </div>
+      </a>
     </div>
   </div>
   {{-- <div class="col-xl-3 col-md-6">

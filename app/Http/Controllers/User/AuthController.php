@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Helpers\Validate;
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,6 +16,7 @@ class AuthController extends Controller
             'email'=> $request->email,
             'password'=>$request->password
         ];
+        $credentials = Validate::login($request, User::class);
         if(Auth::attempt($cred)){
             return redirect()->intended(route('user.dashboard'));
         }

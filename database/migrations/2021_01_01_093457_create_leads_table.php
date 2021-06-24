@@ -20,12 +20,17 @@ class CreateLeadsTable extends Migration
             $table->bigInteger('phone');
             $table->bigInteger('token_amount');
             $table->text('message');
+            $table->boolean('accepted')->default(false);
             $table->foreignId('plot_id')->nullable();
             $table->foreign('plot_id')->references('id')->on('plots')->onDelete('cascade');
             $table->foreignId('property_id')->nullable();
             $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
             $table->foreignId('service_id')->nullable();
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+            $table->foreignId('agent_id');
+            $table->foreign('agent_id')->references('id')->on('agents')->onDelete('cascade');
+            $table->foreignId('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

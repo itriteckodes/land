@@ -103,18 +103,18 @@
             </li>  
             
             <li class="nav-item ">
-              <a class="nav-link" href="#navbar-example" data-toggle="collapse" role="button" aria-expanded="false"
+              <a class="nav-link" href="#navbar-exampless" data-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="navbar-examples">
                 <i class="ni ni-single-copy-04 text-orange"></i>
-                <span class="nav-link-text">Bookings</span>
+                <span class="nav-link-text">Leads</span>
               </a>
-              <div class="collapse" id="navbar-example">
+              <div class="collapse" id="navbar-exampless">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="{{route('user.token.index')}}" class="nav-link">Plot Bookings</a>
+                    <a href="{{route('user.pending_leads')}}" class="nav-link">Pending Leads</a>
                   </li>
-                  <li class="nav-item {{(Request::is('user/complaint/'))? 'active':''}}">
-                    <a href="{{route('user.token.property')}}" class="nav-link">Property Bookings</a>
+                  <li class="nav-item">
+                    <a href="{{route('user.accepted_leads')}}" class="nav-link">Accepted Bookings</a>
                   </li>
                
                 </ul>

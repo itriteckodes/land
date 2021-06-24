@@ -14,24 +14,21 @@
           <table class="table table-flush" id="datatable-basic">
             <thead class="thead-light">
               <tr>
+                <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Image</th>
-                <th>Phone</th>
                 <th>Action</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-                @foreach ($agents as $agent)
+                @foreach ($users as $key=>$user)
               <tr>
-                  <td>{{$agent->name}}</td>
-                  <td>{{$agent->email}}</td>
-                  <td><img src="{{$agent->image}}" height="50px" width="50px" alt=""></td>
-                  <td>{{$agent->phone}}</td>
-                  <td><a class="btn btn-primary" href="{{route('admin.agent_properties',$agent->id)}}">Properties</a></td>
-                  <td><a class="btn btn-success" href="{{route('admin.agent_plots',$agent->id)}}">Plots</a></td>
-
+                  <td>{{$key+1}}</td>
+                  <td>{{$user->name}}</td>
+                  <td>{{$user->email}}</td>
+                  <td><a href="{{route('admin.user_properties',$user->id)}}" class="btn btn-primary btn-sm">Properties</a></td>
+                  <td><a href="{{route('admin.user_plots',$user->id)}}" class="btn btn-success btn-sm">Plots</a></td>
               </tr>
               @endforeach
             </tbody>

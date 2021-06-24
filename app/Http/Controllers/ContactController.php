@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use App\Models\Lead;
+use App\Models\Plot;
+use App\Models\Property;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ContactController extends Controller
 {
@@ -20,8 +23,15 @@ class ContactController extends Controller
     }
 
     public function save_lead(Request $request){
-        Lead::create($request->all());
-        toastr()->info('your form was submitted to the agent you will be responded soon','Done');
+        if($request->plot_id){
+            $plot = Plot::find($request->plot_id);
+             Lead::create(['agent_id'=>$plot->agent_id,'user_id'=>Auth::user()->id]+$request->all());
+        }
+        elseif($request->property_id){
+            $property = Property::find($request->property_id);
+             Lead::create(['agent_id'=>$property->agent_id,'user_id'=>Auth::user()->id]+$request->all());
+        }
+        toastr()->info('your Lead was submitted to the agent you will be responded soon','Done');
         return redirect()->back();
     }
 }

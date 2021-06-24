@@ -27,7 +27,7 @@ Route::get('/', function () {
   Route::get('maps','App\Http\Controllers\MapController@maps')->name('maps');
   Route::post('contact/store','App\Http\Controllers\ContactController@store')->name('contact_store');
   Route::get('agents/properties/{id}','App\Http\Controllers\AgentController@agentProperty')->name('agent_property');
-  Route::post('add/lead','App\Http\Controllers\ContactController@save_lead')->name('save_lead');
+  Route::post('add/lead','App\Http\Controllers\ContactController@save_lead')->name('save_lead')->middleware('auth');
   Route::get('plots','App\Http\Controllers\PlotController@index')->name('plots');
   Route::get('plot/detail/{id}','App\Http\Controllers\PlotController@details')->name('plot_detail');
   Route::get('property/detail/{id}','App\Http\Controllers\AgentController@property_details')->name('property_detail');
@@ -61,7 +61,8 @@ Route::group(['prefix'=> 'user','namespace' => 'App\Http\Controllers\User', 'as'
     Route::get('avail/service/{id}', 'ServiceController@avail')->name('avail_service');
     Route::get('user/services', 'ServiceController@userService')->name('user_service');
     Route::post('services/payment', 'ServiceController@servicepayment')->name('service.payment');
-    
+    Route::get('pending/leads','LeadController@pending_leads')->name('pending_leads');
+    Route::get('accepted/leads','LeadController@accepted_leads')->name('accepted_leads');
     Route::post('services/pay', 'ServiceController@servicepay')->name('service.pay');
     Route::get('logout', 'AuthController@logout')->name('logout');
   });
@@ -87,6 +88,15 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     Route::get('print/{id}','EmployeeController@print')->name('print');   
     Route::get('fulfil/complaint/{id}','ComplaintController@approve')->name('fullfill_complaint');
     Route::get('availed/services/user','ServiceController@fetch')->name('availed_services');
+    Route::get('all/users','UserController@index')->name('all_users');
+    Route::get('user/plots/{id}','UserController@user_plots')->name('user_plots');
+    Route::get('user/properties/{id}','UserController@user_properties')->name('user_properties');
+
+    Route::get('sold/properties','SoldController@sold_properties')->name('sold_props');
+    Route::get('sold/plots','SoldController@sold_plots')->name('sold_plots');
+
+    Route::get('agent/properties/{id}','AgentController@agent_properties')->name('agent_properties');
+    Route::get('agent/plots/{id}','AgentController@agent_plots')->name('agent_plots');
   });
 });
 
@@ -106,7 +116,11 @@ Route::group(['middleware' => ['auth:agent'] ], function () {
     Route::get('profile','AgentController@profile')->name('profile');                                
     Route::post('update/profile','AgentController@update_profile')->name('update_profile');   
     Route::get('lead/plots','LeadController@plots')->name('lead_plots');                             
+    Route::get('pending/lead/plots','LeadController@pend_plot_leads')->name('lead_plots_pending');                             
+    Route::get('pending/lead/properties','LeadController@pend_prop_leads')->name('lead_prop_pending');                             
     Route::get('lead/properties','LeadController@properties')->name('lead_properties');     
+    Route::get('lead/property/accept/{id}/{lid}','LeadController@property_accept')->name('lead_prop_accept');     
+    Route::get('lead/plot/accept/{id}/{lid}','LeadController@plot_accept')->name('lead_plot_accept');     
      Route::get('token','PlotController@tokens')->name('token.index');                             
 
 });

@@ -69,7 +69,11 @@
         @csrf
         <input type="hidden" value="{{$monthly}}" name="payment">
         <input type="hidden" value="{{Auth::user()->id}}" name="id">
+        @if (Carbon\Carbon::today()->between(Carbon\Carbon::now()->firstOfMonth() ,Carbon\Carbon::now()->firstOfMonth()->addDays(5)))
         <button class="btn btn-primary mb-4 pb-2 pt-2 " >PAY NOW</button>
+        @endif
+        <br>
+        <p>Payments are only made between First and Fifth of a month</p>
       </form>
       @else
       @endif

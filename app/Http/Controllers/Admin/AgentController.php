@@ -85,4 +85,14 @@ class AgentController extends Controller
     {
         //
     }
+
+    public function agent_properties($id){
+        $agent = Agent::find($id);
+        return view('admin.agent.properties')->with('properties',$agent->properties);
+    }
+    
+    public function agent_plots($id){
+        $agent = Agent::find($id);
+        return view('admin.agent.plots')->with('plots',$agent->plots);
+    }
 }

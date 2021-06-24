@@ -29,7 +29,7 @@ class PlotSeeder extends Seeder
         
         Plot::create([
             'title' => 'Plot 2',
-            'agent_id'=>'2',
+            'agent_id'=>'1',
             'area'=> '85',
             'description'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
             'address'=>'Lorem ipsum dolor sit',

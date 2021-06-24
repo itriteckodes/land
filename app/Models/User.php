@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Helpers\ImageHelper;
+use App\Traits\UserMethods;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Hash;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable , UserMethods;
 
     /**
      * The attributes that are mass assignable.
@@ -63,10 +64,10 @@ class User extends Authenticatable
     } 
     
     public function plots(){
-        return $this->hasmany(Plot::class);
+        return $this->hasMany(Plot::class);
     }
 
     public function properties(){
-        return $this->hasmany(Property::class);
+        return $this->hasMany(Property::class);
     }
 }

@@ -14,7 +14,7 @@ class AgentController extends Controller
     }
 
     public function agentProperty($id){
-        $properties = Property::where('agent_id',$id)->get();
+        $properties = Property::where('agent_id',$id)->where('occupy',false)->get();
         return view('front.agent_property')->with('properties',$properties);
     }
     public function property_details($id){
@@ -23,7 +23,7 @@ class AgentController extends Controller
     }
 
     public function properties(){
-        $properties = Property::all();
+        $properties = Property::where('occupy',false)->get();
         return view('front.agent_property')->with('properties',$properties);
 
     }

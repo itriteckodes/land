@@ -89,21 +89,6 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 text-center">
-        @if (Auth::user())
-        <button data-toggle="modal"
-        data-target="#edit_modal" class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Add To Bookings List</h4>    
-        </button>
-        @else
-          <a href="{{route('user.login')}}"><button  class="btn-block btn-success" style="padding: 10px 0px;"><h4 class="text-danger">Login for Booking</h4>    
-          </button></a>
-        
-
-          @endif
-    
-      </div>
-    </div>
-    <div class="row">
       <div class="col-md-12">
         <div class="property-tab">
           <!-- Nav tabs -->
@@ -204,7 +189,7 @@
                         <div class="single-query">
                           <input type="text" name="name" placeholder="Your Name" class="keyword-input">
                         </div>
-                        <input type="text" name="property_id" value="{{$property->id}}" hidden>
+                        <input type="number" name="property_id" value="{{$property->id}}" hidden>
                         <div class="single-query">
                           <input type="text" name="phone" placeholder="Phone Number" class="keyword-input">
                         </div>
@@ -222,7 +207,7 @@
                         </div>
                       </div>
                       <div class="col-sm-12">
-                        <button type="submit" class="btn_fill">Submit Now</button>
+                        <button type="submit" class="btn_fill text-right">Submit Now</button>
                       </div>
                     </div>
                   </form>

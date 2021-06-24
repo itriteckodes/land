@@ -102,19 +102,38 @@
               </div>
             </li>
             
-            <li class="nav-item {{(Request::is('agent/lead/*'))? 'active':''}}">
+            <li class="nav-item">
+              <a class="nav-link " href="#navbar-leadsp" data-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="navbar-plots">
+                <i class="ni ni-circle-08 text-pink"></i>
+                <span class="nav-link-text">Plot Leads</span>
+              </a>
+              <div class="collapse" id="navbar-leadsp">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item {{(Request::is('agent/plot/create'))? 'active':''}}">
+                    <a href="{{route('agent.lead_plots_pending')}}" class="nav-link">pending leads</a>
+                  </li>
+                  <li class="nav-item {{(Request::is('agent/plot/'))? 'active':''}}">
+                    <a href="{{route('agent.lead_plots')}}" class="nav-link">Sold</a>
+                  </li>
+               
+                </ul>
+              </div>
+            </li>
+            
+            <li class="nav-item">
               <a class="nav-link " href="#navbar-leads" data-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="navbar-plots">
                 <i class="ni ni-circle-08 text-pink"></i>
-                <span class="nav-link-text">Leads</span>
+                <span class="nav-link-text">Property Leads</span>
               </a>
               <div class="collapse" id="navbar-leads">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item {{(Request::is('agent/plot/create'))? 'active':''}}">
-                    <a href="{{route('agent.lead_plots')}}" class="nav-link">plots</a>
+                    <a href="{{route('agent.lead_prop_pending')}}" class="nav-link">pending leads</a>
                   </li>
                   <li class="nav-item {{(Request::is('agent/plot/'))? 'active':''}}">
-                    <a href="{{route('agent.lead_properties')}}" class="nav-link">properties</a>
+                    <a href="{{route('agent.lead_properties')}}" class="nav-link">Sold</a>
                   </li>
                
                 </ul>

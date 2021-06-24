@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PlotController extends Controller
 {
     public function index(){
-        $plots = Plot::all();
+        $plots = Plot::where('occupy',false)->get();
         return view('front.plotList')->with('plots',$plots);
     }
     public function details($id){

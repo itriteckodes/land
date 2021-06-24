@@ -82,7 +82,12 @@
                 </ul>
               </div>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.all_users')}}">
+                <i class="ni ni-align-left-2 text-default"></i>
+                <span class="nav-link-text">Users</span>
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link {{(Request::is('admin/service*'))? 'active': ''}}" href="#navbar-h" data-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="navbar-examples">

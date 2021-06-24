@@ -60,17 +60,11 @@ class Agent extends Authenticatable
     return $this->attributes['image'] = asset($value);
     }
 
-    public function leadsCount(){
-        $count = 0;
-        $leads = Lead::all();
-            foreach($leads as $lead){
-                if( $lead->plot->agent->id == $this->id){
-                    $count++;
-                }
-                elseif( $lead->property->agent->id == $this->id){
-                    $count ++;
-                }
-            }
-      return $count;
+    public function plots(){
+        return $this->hasMany(Plot::class);
+    }
+    
+    public function properties(){
+        return $this->hasMany(property::class);
     }
 }
