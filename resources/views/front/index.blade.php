@@ -138,57 +138,7 @@
       <div class="col-sm-1 col-md-2"></div>
     </div>
 
-    <div class="row number-counters text-center mt-30">
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <!-- first count item -->
-        <div class="counters-item">
-          <i class="fa fa-file" aria-hidden="true"></i>
-          <!-- Set Your Number here. i,e. data-to="56" -->
-          <strong data-to="520">0</strong>
-          <p>Properties Sold</p>
-          <div class="border-inner"></div>
-        </div>
-
-      </div>
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <!-- first count item -->
-        <div class="counters-item">
-          <i class="fa fa-th" aria-hidden="true"></i>
-          <!-- Set Your Number here. i,e. data-to="56" -->
-          <strong data-to="5620">0</strong>
-          <p>Work Done</p>
-          <div class="border-inner"></div>
-        </div>
-
-      </div>
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <!-- first count item -->
-        <div class="counters-item">
-          <i class="fa fa-users" aria-hidden="true"></i>
-          <!-- Set Your Number here. i,e. data-to="56" -->
-          <strong data-to="1520">0</strong>
-          <p>Our Client</p>
-          <div class="border-inner"></div>
-        </div>
-
-      </div>
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <!-- first count item -->
-        <div class="counters-item">
-          <i class="fa fa-th-list" aria-hidden="true"></i>
-          <!-- Set Your Number here. i,e. data-to="56" -->
-          <strong data-to="5020">0</strong>
-          <p>Users</p>
-          <div class="border-inner"></div>
-        </div>
-
-      </div>
-
-    </div>
+  
 
   </div>
 </div>
@@ -368,11 +318,11 @@
 
   </div>
 </section>
-<!--/#services-->
 
 
-<!-- PROPERTY LISTING -->
-{{-- <section id="property" class="bg_light padding">
+
+
+<section id="property" class="bg_light padding">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 bottom40">
@@ -384,7 +334,7 @@
       </div>
     </div>
     <div class="row">
-      @foreach (App\Models\Property::take(6)->get() as $property)
+      @foreach (App\Models\Property::all()->take(6) as $property)
       <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="property_item heading_space">
           <div class="image">
@@ -421,22 +371,17 @@
           </div>
         </div>
       </div>
-    
       @endforeach
     </div>
-    <div class="text-center">
-      <a href="{{route('properties')}}" class="btn_fill ">View All</a>
-
-    </div>
-
+    
   </div>
-</section> --}}
+</section>
 
 <section id="property" class="bg_light padding">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 bottom40">
-        <h2 class="uppercase">PROPERTY <span class="color_red">LISTINGS</span></h2>
+        <h2 class="uppercase">PLot <span class="color_red">LISTINGS</span></h2>
         <div class="line_1"></div>
         <div class="line_2"></div>
         <div class="line_3"></div>
@@ -444,38 +389,29 @@
       </div>
     </div>
     <div class="row">
-      @foreach (App\Models\Property::all() as $property)
+      @foreach (App\Models\Plot::all()->take(6) as $plot)
       <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="property_item heading_space">
           <div class="image">
-            <img src="{{$property->image1}}" alt="listin" class="img-responsive">
+            <img src="{{$plot->image}}" alt="listin" class="img-responsive">
             <div class="overlay">
               <div class="centered"><a class="link_arrow white_border"
-                  href="{{route('property_detail',$property->id)}}">View Detail</a></div>
+                  href="{{route('plot_detail',$plot->id)}}">View Detail</a></div>
             </div>
-            <div class="price"><span class="tag">
-              @if ($property->type == 'sale')
-                  For Sale
-              @elseif($property->type == 'invest')
-                  For Investment
-              @else
-                  For Rent
-              @endif
-            </span></div>
+            <div class="feature"><span class="tag">Featured</span></div>
+            <div class="price"><span class="tag">For Sale</span></div>
             <div class="property_meta">
-              <span><i class="fa fa-object-group"></i>{{$property->area}} sq ft </span>
-              <span><i class="fa fa-bed"></i>{{$property->bedrooms}}</span>
-              <span><i class="fa fa-bath"></i>{{$property->bathrooms}} Bathroom</span>
+              <span><i class="fa fa-object-group"></i>{{$plot->area}} sq ft </span>
             </div>
           </div>
           <div class="proerty_content">
             <div class="proerty_text">
-              <h3><a href="property_details_1.html">{{$property->address}}</a></h3>
-              <span class="bottom10">{{$property->city}}</span>
-              <p><strong>PKR: {{$property->price}} </strong></p>
+              <h3><a href="property_details_1.html">{{$plot->address}}</a></h3>
+              <span class="bottom10">{{$plot->city}}</span>
+              <p><strong>PKR:{{$plot->price}}/-</strong></p>
             </div>
             <div class="favroute clearfix">
-              <p class="pull-left"><i class="icon-calendar2"></i> {{$property->created_at->diffForHumans()}}</p>
+              <p class="pull-left"><i class="icon-calendar2"></i> {{$plot->created_at->diffForHumans()}}</p>
 
             </div>
           </div>

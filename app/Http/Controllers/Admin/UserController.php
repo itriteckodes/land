@@ -23,4 +23,11 @@ class UserController extends Controller
         $properties = $user->properties;
         return view('admin.user.user_prop')->with('properties',$properties);
     }
+
+    public function delete_user($id){
+        $user = User::find($id);
+        $user->delete();
+        toastr()->success('user was deleted');
+        return redirect()->back();
+    }
 }

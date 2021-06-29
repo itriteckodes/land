@@ -75,15 +75,9 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="description">
-              <h3 class="text-uppercase  bottom20 top10">Property <span class="color_red">Description</span></h3>
+              <h3 class="text-uppercase  bottom20 top10">Plot <span class="color_red">Description</span></h3>
               <p class="p-font-15">{{$plot->description}}</p>
 
-              <div class="property_meta bottom40">
-                <span><i class="fa fa-object-group"></i>{{$plot->area}} sq ft </span>
-                <span><i class="fa fa-bed"></i>{{$plot->bedrooms}} Bedrooms</span>
-                <span><i class="fa fa-bath"></i>{{$plot->bathrooms}} Bathroom</span>
-                <span><i class="fa fa-car"></i>{{$plot->garage}} Garage</span>
-              </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="summary">
               <div class="row property-d-table">
@@ -94,7 +88,7 @@
                   <table class="table table-striped table-responsive">
                     <tbody>
                       <tr>
-                        <td><b>Property Id</b></td>
+                        <td><b>Plot Id</b></td>
                         <td class="text-right">{{$plot->id}}</td>
                       </tr>
                       <tr>
@@ -102,7 +96,7 @@
                         <td class="text-right">{{$plot->price}}</td>
                       </tr>
                       <tr>
-                        <td><b>Property Size</b></td>
+                        <td><b>PLot Size</b></td>
                         <td class="text-right">{{$plot->area}}ft2</td>
                       </tr>
                     </tbody>
@@ -134,13 +128,7 @@
                       <p>{{$plot->agent->email}}</p>
                     </div>
                   </div>
-                  <ul class="socials">
-                    <li><a href="#."><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#."><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#."><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#."><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#."><i class="fa fa-pinterest"></i></a></li>
-                  </ul>
+                
                 </div>
               </div>
               <div class="row top30">
@@ -175,18 +163,6 @@
                   </form>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="social-networks top40">
-                    <div class="social-icons-2">
-                      <span class="share-it">Share: </span>
-                      <span><a href="#."> Facebook</a></span>
-                      <span><a href="#.">Twitter</a></span>
-                      <span><a href="#."> Google +</a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -200,7 +176,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 padding_top bottom40">
-      <h2 class="text-uppercase">Property <span class="color_red">Map</span></h2>
+      <h2 class="text-uppercase">PLot <span class="color_red">Map</span></h2>
       <div class="line_1"></div>
       <div class="line_2"></div>
       <div class="line_3"></div>
@@ -210,7 +186,7 @@
 
 <h3 style="margin-left: 150px">Following Plot is Highlighted on the Eagle City Map</h3>
 <br>
-<div class="bar container">
+<div class="bar container mb-5">
   <section class="">
     <div class="row">
       <div class="col-md-12">
@@ -281,7 +257,7 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="{{($plot->id ===3) ? 'bg-danger':'bg-secondary'}}">
+                    <div class="{{($plot->id ===4) ? 'bg-danger':'bg-secondary'}}">
                       <h5 class="text-center" style="padding:55px 0px 63px 0px">6x4</h5>
                     </div>
                   </div>
@@ -503,52 +479,10 @@
     </div>
   </section>
 </div>
+<br><br>
 
 
 <div id="edit_modal" class="modal fade">
-  <div class="modal-dialog">
-      <form action="{{route('user.token.store')}}" method="POST" enctype="multipart/form-data" >
-          @csrf
-   
-          <input type="hidden" name="user_id" value=" @if (Auth::user())
-          {{Auth::user()->id}}">
-          @endif
-          
-          <input type="hidden" name="plot_id" value="{{$plot->id}}">
-          <input type="hidden" name="agent_id" value="{{$plot->agent_id}}">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h3 class="modal-title mt-0" id="myModalLabel">Add To Bookings</h3>
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              </div>
-              <div class="modal-body">
-                  <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" name="name" required>
-                  </div> 
-                  <div class="form-group">
-                      <label for="name">Email</label>
-                      <input type="email" class="form-control" name="email" required>
-                  </div>
-                 <div class="form-group">
-                      <label for="name">Phone</label>
-                      <input type="number" class="form-control" name="phone" required>
-                  </div>
-                 <div class="form-group">
-                      <label for="name">Price</label>
-                      <input type="number" class="form-control" name="price" required>
-                  </div>
-                 <div class="form-group">
-                      <label for="name">Description</label>
-                      <textarea class="form-control" id="" name="desc"></textarea>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Cancel</button>
-                  <button type="submit" id="submit" class="btn btn-primary waves-effect waves-light">Book Now</button>
-              </div>
-          </div>
-      </form>
-  </div>
+
 </div>
 @endsection

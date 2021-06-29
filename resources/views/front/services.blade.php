@@ -27,10 +27,6 @@
                 <span class="bottom10">{{$service->city}}</span>
                 <p><strong>PKR:{{$service->price}}</strong></p>
               </div>
-              <div class="favroute clearfix">
-                <p class="pull-left"><i class="icon-calendar2"></i> {{$service->created_at->diffForHumans()}}</p>
-  
-              </div>
             </div>
           </div>
         </div>

@@ -89,6 +89,7 @@ Route::group(['middleware' => ['auth:admin'] ], function () {
     Route::get('fulfil/complaint/{id}','ComplaintController@approve')->name('fullfill_complaint');
     Route::get('availed/services/user','ServiceController@fetch')->name('availed_services');
     Route::get('all/users','UserController@index')->name('all_users');
+    Route::get('delete/user/{id}','UserController@delete_user')->name('delete_user');
     Route::get('user/plots/{id}','UserController@user_plots')->name('user_plots');
     Route::get('user/properties/{id}','UserController@user_properties')->name('user_properties');
 

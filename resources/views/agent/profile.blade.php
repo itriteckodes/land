@@ -30,7 +30,7 @@
             <label class="form-control-label">Image</label>
             <div class="input-group">
               <img src="{{Auth::user()->image}}" height="50px" width="50px" alt="">
-              <input type="file" class="form-control" name="image" value="{{Auth::user()->email}}">
+              <input type="file" class="form-control" name="image" value="">
             </div>
           </div>
         </div>

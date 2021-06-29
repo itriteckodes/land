@@ -30,7 +30,7 @@
             <div class="proerty_text">
               <h3><a href="property_details_1.html">{{$plot->address}}</a></h3>
               <span class="bottom10">{{$plot->city}}</span>
-              <p><strong>$83,600,200</strong></p>
+              <p><strong>PKR:{{$plot->price}}/-</strong></p>
             </div>
             <div class="favroute clearfix">
               <p class="pull-left"><i class="icon-calendar2"></i> {{$plot->created_at->diffForHumans()}}</p>

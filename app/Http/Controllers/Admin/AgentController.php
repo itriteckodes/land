@@ -83,7 +83,9 @@ class AgentController extends Controller
      */
     public function destroy(Agent $agent)
     {
-        //
+        $agent->delete();
+        toastr()->success('agent was deleted');
+        return redirect()->back();
     }
 
     public function agent_properties($id){

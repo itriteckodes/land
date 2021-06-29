@@ -116,7 +116,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title text-uppercase text-muted mb-0">Booked Plots</h5>
+            <h5 class="card-title text-uppercase text-muted mb-0">Sold Plots</h5>
             <span class="h2 font-weight-bold mb-0">{{App\Models\Plot::where('occupy',true)->get()->count()}}</span>
           </div>
           <div class="col-auto">
@@ -139,7 +139,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h5 class="card-title text-uppercase text-muted mb-0">Booked Properties</h5>
+            <h5 class="card-title text-uppercase text-muted mb-0">Sold Properties</h5>
             <span class="h2 font-weight-bold mb-0">{{App\Models\Property::where('occupy',true)->get()->count()}}</span>
           </div>
           <div class="col-auto">
@@ -153,6 +153,54 @@
         </p>
       </div>
       </a>
+    </div>
+  </div>
+  
+  <div class="col-xl-3 col-md-6">
+    <div class="card card-stats">
+      <a href="{{route('admin.complaint')}}">
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted mb-0">Total Complaints</h5>
+            <span class="h2 font-weight-bold mb-0">{{App\Models\Complaint::all()->count()}}</span>
+          </div>
+          <div class="col-auto">
+            <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+              <i class="ni ni-money-coins"></i>
+            </div>
+          </div>
+        </div>
+        <p class="mt-3 mb-0 text-sm">
+        
+        </p>
+      </div>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="col-xl-3 col-md-6">
+    <div class="card card-stats">
+     <a href="{{route('admin.sold_plots')}}">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted mb-0">Complaints Fulfilled</h5>
+            <span class="h2 font-weight-bold mb-0">{{App\Models\Complaint::where('status',true)->get()->count()}}</span>
+          </div>
+          <div class="col-auto">
+            <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+              <i class="ni ni-chart-pie-35"></i>
+            </div>
+          </div>
+        </div>
+        <p class="mt-3 mb-0 text-sm">
+       
+        </p>
+      </div>
+    </a>
     </div>
   </div>
   {{-- <div class="col-xl-3 col-md-6">
@@ -177,4 +225,7 @@
     </div>
   </div> --}}
 </div>
+
+
 @endsection
+
