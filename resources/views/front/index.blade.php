@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="banner_detail">
-          <h2>Well Come in <span>Eagle City</span></h2>
+          <h2>Well Come to <span>Eagle City</span></h2>
           <div id="typewriter"></div>
           <div class="btns-box">
             <a href="{{route('about')}}" class="btn_brd">Read More</a>
@@ -30,7 +30,15 @@
           <div class="line_1"></div>
           <div class="line_2"></div>
           <div class="line_3"></div>
-          <p class="top20 bottom40">This platform is providing facility regarding properties,plots and services. Providing an ease to search plots and properties at just one click. Buying real estate in Pakistan is not only one of the most lucrative investment avenues but also a huge financial commitment. Whether you are a real estate market entrant or have several years of experience under your belt, it is imperative to undertake meticulous due diligence before signing below any dotted line. In simpler words, you need to make sure the property you are planning to buy fits your needs, budget, and lifestyle requirements.  </p>
+          <p class="top20 bottom40">Eagle Developers & Builders (Pvt) Limited is specialized in 
+            constructing world-class housing facilities and gated communities. 
+            This new phenomenon of excellence has started from relatively low-key 
+            markets, before storming the mainstream Real Estate regions.
+            In record time, the rise of Royal Developers & Builders as a Real 
+            Estate developer is only because of ALLAH ALMIGHTY’s blessings. Royal 
+            Developers & Builders also owe their gratitude to the partners, 
+            associates, investors and friends for their continued support & trust.
+            Eagle Group through its subsidiary Eagle Developers & Builders reiterate to work together for setting newer higher standards of living and developments – contributing towards a better, progressive & prosperous Pakistan – INSHA'ALLAH..  </p>
           <a class="link_arrow dark_border top40" href="{{route('about')}}">Read More</a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -89,18 +97,21 @@
 
           <h4>A little about us and a breif history of how we started.</h4>
 
-          <p>Since due diligence is one of the most important parts of any real estate transaction and Eagle City always strives to provide you with the latest and most up-to-date information, here is a comprehensive guide that not only answers some of the most frequently asked questions or FAQs about Eagle but also explains why it is one of the hottest investment options in Lahore right now. </p>
+          <p>In view of growing housing demand in the Sargodha city, Eagle 
+            Developers intends to build a quality housing project on Lahore road 
+            adjacent to Motorway.Motorway Interchange falling on the eastern route 
+            of Lahore Road. Eagle City aims to become first ever smart city in Sargodha with smart E-Services. To lead as a model for sustainable and samrt development. </p>
 
           <ul>
-              <li><i class="fa fa-check-square" aria-hidden="true"></i> Pleasure and praising in finding property</li>
-              <li><i class="fa fa-check-square" aria-hidden="true"></i> The great explorer of the truth</li>
-              <li><i class="fa fa-check-square" aria-hidden="true"></i> Anyone who loves or pursues or desires</li>
-              <li><i class="fa fa-check-square" aria-hidden="true"></i> The printing and typesetting industry.</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i>  Ease and security in finding properties</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i>  Availing services online  </li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> Personalized smart portal for customers</li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i> A smart and connected way to live</li>
           </ul>
 
           <div class="founder-text">
               <p>Who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur.</p>
-              <h3>- Ali Farhan, Founder.</h3>
+              <h3>- ABC, Founder.</h3>
           </div> 
 
         </div>
@@ -133,7 +144,14 @@
         <div class="line_1-1"></div>
         <div class="line_2-2"></div>
         <div class="line_3-3"></div>
-        <p class="heading_space">Despite the fact that it is masterfully engineered with ultramodern design and features, the project is surprisingly affordable, which makes it a brilliant investment package. To further add to the convenience of investors, the payment plans for Eagle City have recently been made even more flexible than before for only a limited time. </p>
+        <p class="heading_space">Eagle Developers (Pvt) Limited is known for delivering best 
+          development projects in the most stringent timelines and extraordinary 
+          work requirements of a wide spectrum of clients. The Eagle group has 
+          undertaken prestigious projects of national and international 
+          significance. Just like this masterpiece we have designed here using 
+          our years of experience. Despite the fact that it is masterfully 
+          engineered with ultramodern design and features, the project is 
+          surprisingly affordable, which makes it a brilliant choice. </p>
       </div>
       <div class="col-sm-1 col-md-2"></div>
     </div>
@@ -150,36 +168,29 @@
 
       <div class="row">
         <div class="col-xs-12 bottom40">
-          <h2>Eagle City</h2>
+          <h2>Registration</h2>
           <div class="line_1"></div>
           <div class="line_2"></div>
           <div class="line_3"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
+          <p>Get print of empty downloaded Application Form to fill manually.Submit 
+            the signed Application Form along with all attachments to the 
+            authorized Dealer or at Site Office.
+            <br>
+            <p>
+            - OR -
+            
+            Become a Smart Member of smart city and proceed online to register.</p>
         </div>
       </div>
 
       <div class="row">
 
-        <div class="col-lg-4 col-md-4">
-          <div class="popup-video">
-            <img class="img-responsive full-width" src="images/counter.jpg" alt="">
-            <div class="pro-video">
-              <a title="title here" data-height="420" data-width="900" class="html5lightbox content-vbtn-color-blue"
-                href="https://www.youtube.com/watch?v=8VnjK4P7gIg"><i class="fa fa-play" aria-hidden="true"></i></a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-8 col-md-8">
-          <h5>Register in Eagle City</h5>
+        <div class="col-lg-12 col-md-12">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="feature-text left-icon">
                 <div class="feature-icon">
-                  <i class="icon-library"></i>
+                  <i class="icon-copy"></i>
                 </div>
                 <div class="feature-info">
                   <h5>Manual Registration</h5>
@@ -190,7 +201,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="feature-text left-icon">
                 <div class="feature-icon">
-                  <i class="icon-office"></i>
+                  <i class="icon-desktop"></i>
                 </div>
                 <div class="feature-info">
                   <h5>Online Registration</h5>
@@ -292,18 +303,19 @@
             <div class="services-tab-detail">
 
               <div class="services-tab-heading">
-                <h3>VALUATION ADVISORY</h3>
-                <p>Here is a comprehensive guide that not only answers some of the most frequently asked questions or FAQs about Eagle but also explains why it is one of the hottest investment options in Lahore right now</p>
+                <p>Here is a comprehensive guide that not only answers some of the most 
+                  frequently asked questions or FAQs about Eagle City but also explains 
+                  why it is one of the best options in Sargodha right now.</p>
               </div>
 
               <ul class="services-list">
-                <li>Appraisal Review</li>
-                <li>Highest and Best Use Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Institutional Capabilities</li>
-                <li>Appraisals</li>
-                <li>Estate Planning</li>
-                <li>Feasibility Studies</li>
+                <li> Free of Cost Marketplace for Agents</li>
+                <li> Free advertisement of Properties</li>
+                <li>Ease in Searching and Buying Properties</li>
+                <li>Online  availing of our smart services</li>
+                <li>Personalized portal for our valued Customers</li>
+                <li>Only smart city of Sargodha</li>
+                <li>Estate Planning and Development</li>
               </ul>
 
               <a href="{{route('about')}}" class="btn_fill">Read More</a>
@@ -467,7 +479,7 @@
           <i class="icon-icons74"></i>
           <ul>
             <li>
-              <h4>Victoria Hall,</h4>
+              <h4>Lahore Road,</h4>
             </li>
             <li>
               <p>Eagle City, Sargodha</p>

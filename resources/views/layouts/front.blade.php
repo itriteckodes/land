@@ -197,7 +197,7 @@
       <div class="col-md-3 col-sm-4">
         <div class="widget dark">
           <img class="mt-5 mb-20" alt="" src="images/logo.png">
-          <p>Property centre main satellite town chowk Sargodha
+          <p>Lahore Road, Sargodha
           </p>
           <ul class="list-inline mt-5">
             <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">123-456-789</a> </li>

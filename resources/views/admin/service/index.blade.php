@@ -7,7 +7,7 @@
     <div class="card">
       <!-- Card header -->
       <div class="card-header">
-        <h3 class="mb-0">Agents</h3>
+        <h3 class="mb-0">Services</h3>
 
       </div>
       <div class="table-responsive py-4">
